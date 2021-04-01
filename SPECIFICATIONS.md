@@ -33,6 +33,8 @@
     * Deckbuilding ("deck destroying"/"deck timing") aspects
         * All players share same deck
         * Discarded cards are returned to the bottom of the deck 
+        * DTC: Buy/aquire cards from shared card pool (akin to the 'kingdom' area in Dominion) into shared deck 
+        * DTC: Maybe have something (card(s)/card pools/effects/traits etc) that are tied to the specific player (instead of being shared) to enable specific builds and stratagies
     * Attacking and defending
         * Abilities
             * Cost x mana (x can be zero, consequence mana and card are considered 'depleted' until next replenish)
