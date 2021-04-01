@@ -11,7 +11,7 @@
 * Who does what? (Preliminary roles)
     * Fabian - Graphics
     * Noah   - Head of Mechanics
-    * Kevin  - Petter, Mechanics Designer (Card design?)
+    * Kevin  - Petter, Mechanics Designer (Card design? Networking?)
 
 ## Features
 
