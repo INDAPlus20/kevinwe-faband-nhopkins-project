@@ -37,7 +37,7 @@
         * Abilities
             * Cost x mana (x can be zero, consequence mana and card are considered 'depleted' until next replenish)
     * Limited card usage per turn
-        * Card used each turn will be depleted (har studerat)
+        * Card used each turn will be depleted ('har studerat')
 
 * Cards
     * Categories of cards
