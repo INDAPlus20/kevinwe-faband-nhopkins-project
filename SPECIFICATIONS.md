@@ -2,7 +2,7 @@
 
 ## Overview
 
-* This will be an attempt at creating a [game] like card-game
+* This will be an attempt at creating a card-game like [game]
     * Created with Rust :crab:
 * Documentation
     * Rustdoc: https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html 
@@ -11,32 +11,35 @@
 * Who does what? (Preliminary roles)
     * Fabian - Graphics
     * Noah   - Head of Mechanics
-    * Kevin  - Petter, Mechanics Designer (Card design?)
+    * Kevin  - Petter, Mechanics Designer (Card design? Networking?)
 
 ## Features
 
 * Graphics :crab:
     * GGplease
-    * Create a playing field
+    * Create a game area (with playing field, hand, bortfall, shared deck areas etc)
     * Create graphics for cards
     * Make an interactable window (Outside console)
 
 * Gameplay
     * Win and lose conditions
         * Out of “Player life”
+        * DTC: Any other win conditions?
     * Card draw and playing
-        * Draw up to hand size at the beginning of each round
+        * Draw up to hand size at the beginning of each round (after replenishment)
         * Keep between rounds
             * DTC: Discard any card at will during your round
         * Deck and hand interaction
-    * Deckbuilding (deck destroying/deck timing) aspects
-        * Same deck
+    * Deckbuilding ("deck destroying"/"deck timing") aspects
+        * All players share same deck
         * Discarded cards are returned to the bottom of the deck 
+        * DTC: Buy/aquire cards from shared card pool (akin to the 'kingdom' area in Dominion) into shared deck 
+        * DTC: Maybe have something (card(s)/card pools/effects/traits etc) that are tied to the specific player (instead of being shared) to enable specific builds and stratagies
     * Attacking and defending
         * Abilities
-            * Cost x mana (x can be zero, mana and card are depleted)
+            * Cost x mana (x can be zero, consequence mana and card are considered 'depleted' until next replenish)
     * Limited card usage per turn
-        * Card used each turn will be depleted (har studerat)
+        * Card used each turn will be depleted ('har studerat')
 
 * Cards
     * Categories of cards
