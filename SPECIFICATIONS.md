@@ -66,3 +66,8 @@
 
 ## Feasibility
 It seems reasonable, but maybe a bit bare. More features can always be added.
+
+## Bottlenecks
+Having a compiling program and working backend is necessary since everything relies on it.
+
+Some funcitons, like hand and card piles will also be necessary for other functions necessary for play.
