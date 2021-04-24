@@ -13,7 +13,7 @@
     * Noah   - Head of Mechanics
     * Kevin  - Petter, Mechanics Designer (Card design? Networking?)
 * Git flow:
-    ![](./architecture/GitBranchStructure.png) 
+    ![](./architecture/git_branch_flow_0.1.2.png) 
 
 ## Features
 
