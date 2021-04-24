@@ -4,14 +4,14 @@
 
 * This will be an attempt at creating a card-game like [game]
     * Created with Rust :crab:
-* Documentation
-    * Rustdoc: https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html 
-* Style Guide
-    * Rust Style Guide: https://github.com/rust-dev-tools/fmt-rfcs/blob/master/guide/guide.md 
 * Who does what? (Preliminary roles)
     * Fabian - Graphics
     * Noah   - Head of Mechanics
     * Kevin  - Petter, Mechanics Designer (Card design? Networking?)
+* Documentation
+    * Rustdoc: https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html 
+* Style Guide
+    * Rust Style Guide: https://github.com/rust-dev-tools/fmt-rfcs/blob/master/guide/guide.md 
 * Git flow:
     ![](./architecture/git_branch_flow_0.1.4.png) 
 
