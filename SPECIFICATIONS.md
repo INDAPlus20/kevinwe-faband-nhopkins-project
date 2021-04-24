@@ -59,8 +59,10 @@
 * Phases of the round:
     1. Replenish permanents and mana tokens
     2. Draw cards up to hand size
-    3. Play cards
-    4. End turn: pass (either voluntarily or mechanically) to the next player.
+    3. Play cards and/or sacrifice cards for mana tokens (that are put on permanents on the board)
+        * Cards that are played are added to a stack on the card playing zone
+        * After stack has resolved, the cards within are shuffled and added back to the bottom of the shared deck
+    5. End turn: pass (either voluntarily or mechanically) to the next player.
 
 ## Challenges
 
