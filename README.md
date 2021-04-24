@@ -10,8 +10,8 @@ The structure of the program can be visualised in diagrams and flowcharts.
 
 ### Architecture
 
-![](./architecture/architecture_0.1.0.PNG)
+![](./architecture/architecture_0.1.0.png)
 
 ### Class structure
 
-![](./architecture/structure_0.1.0.PNG)
+![](./architecture/structure_0.1.0.png)
