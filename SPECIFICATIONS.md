@@ -12,6 +12,8 @@
     * Fabian - Graphics
     * Noah   - Head of Mechanics
     * Kevin  - Petter, Mechanics Designer (Card design? Networking?)
+* Git flow:
+    ![](./architecture/GitBranchStructure.png) 
 
 ## Features
 
