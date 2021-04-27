@@ -1,0 +1,3718 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="1655px"
+   height="1177px"
+   viewBox="-0.5 -0.5 1655 1177"
+   content="&lt;mxfile host=&quot;app.diagrams.net&quot; modified=&quot;2021-04-27T11:02:51.674Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36&quot; etag=&quot;IlesQSBWfw_Vwf8br2N-&quot; version=&quot;14.6.6&quot; type=&quot;google&quot; pages=&quot;2&quot;&gt;&lt;diagram id=&quot;C5RBs43oDa-KdzZeNtuy&quot; name=&quot;class structure&quot;&gt;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&lt;/diagram&gt;&lt;diagram id=&quot;KgXjNTRHBYlqXpyVP6BC&quot; name=&quot;architecture&quot;&gt;7VtZc5s6FP41nmkf7GHHPCZ2nC7pbW663LYvHQVkQ40REXIS99dfCSFAIG+xidtOPdPGHISQzvnOLvfM0eLxEoM0fIcCGPcMbYajoGeOe4ah038F4UP0ExZEraAuowBm0kCCUEyiVCb6KEmgTyQawBg9yMNSMIMSYYrioDXigw9i2KL+FwUk5NSh4Vb0VzCaheLNuuPxOwsgBhc7yUIQoIcaybzomSOMEOHfFo8jGDPOCL4k79zszdvL7z9c64trzJ3P0D3v88km+zxSbgHDhDx56i/jT/piHl0jx/THq0DzL5ef+kJKGVkJhsGA8q+4RJiEaIYSEF9U1HOMlkkA2bQavarGXCGUUqJOiT8gIasCDGBJECWFZBEXd+k28OoLe35gO4YgfM0JnucKwvixeAW/WhVXU5SQYmpdXI9QjHC+ftM6G5mTSf5UcMYARMm3MfLnnDSJYrGMjAAsZrL53fq8GcFoXoKmXPc1xNECEojF4h4jwvfiWW5xzbbS1waa7hWEaivsYlW7aE7H5cGE0MDvFuEL3QJ4BskGiVfIpfoMEX01XtHnMIwBie7ll4JC92bluPLRaxTR5RjaIx/has7ANrzqwydY8buWMxwMHa38NKbP0BL7sJixjuC9XmKa1oAqb/Vx5LdwzrTeQr/UGFGRcu3ZQ0mtUyuSpEZbVGiratRUQVeqwoEw5SLfMM5ow1k5zjwQzhIM9pV5gbB7EC+LN/UMJyaFTZLQ4NwtkbjRz3LWntEB+jB9rG7SbzP291NGzQF9d5IuiZjxFou7Lz5HIHe31BlH1NExJ4jptFRmL8Vouh2+BP6IEptX4JY6cglPII5mCf3uUyEyi3R+DzFh7zgrbiyiIODQhXQT4DafjyEqZXqV89c+79nj8p2FWy9GVs6UTQwf98OOpZZ1MQu1t4ZnmrJN4FcHGre+PKnuyhOg6TSDndgUYy2+gui+ku1+kDOs9ZBbA56SLL22ASnZmD2EEYEfUpAr+QOF6hagPR0V+kZUGI4mCc8tLh+qWFAXmAxrcaB47BCb4X9Nrejjz/fQ/v7m5h/3fuZay/6JAy452Cqdxq8XalVRlTesRVV0zabx3EFV3Vupw2j3OaMvymqwqg0obO9a+2Vrsg44ViNT2DKeEhqw5yt4qq1Ts9BqGbtRCBIqMeYImb8DC0hhROApnFldEaxDndt6u7DJuem2Z0hiEeh8qncT0xgNU9edPzMV/qwpyziO0gzu4EGylJcLptEjM42luGM4rfxTBw5FbyjHsO1RDJVHMZp8fopLmX/799urq7t3DzdJP7tILoOlPRYuRREmhLpw1695LKlRlaKYr7v6aowgpsowgvKR9Asmszgi53MrjhjDlNr2KJnREYipLQmZBi+liFZ78RBCDJt3/Tjy51SWxogZa+K/ZMxi0e0y8UmUz/YQ5ey4ZU9RTY7ZaI1uqZwqxYgGxotqKPBJ/r+PMFtWvBrU9p6ujWbYbmXAcR8lvF+CEgbSKX1Jg5RRyLL9c0dXXH3MHTVTNTWwEQXqNM4daEitEkxaXv/5IibToHGBnFkrgibXbkNcPwbEvwehMX0PyAWNLn4kI/cM3oVKiB8j/uzYWJjbg09HYSqszviorzUVO6cPmip9KLNUQbiCM8jUslS129ZQrEgwNiatT9fJ3UMBFW5kZNVCAcPqEDuNxEXhZnRNhZ2uoLM+GT0MOhcJiQhd3oSnoJM2PgrfNXm/JLWCyDa07GUPmkJ9NmtryVLWXbctZquj/FQp5k5jtJOxuaFMhqVgs0qbSuLR+dxOd46jTtcY+TDL/trUXWDgOs9nVJVZ72m7BuXF3tWgXEq/VBdhfbllhy6CoUZNt2UZx5PDbIG8bsss7Z7FJW8kZCwvC1EKp8s4Xr1UAvN3qrKs17e15kEb6J5rySaid5wai/zEUUosmxD/x7nvRphk223D7an8t9eV5V4fDrOCyg71k4JpLQdeqePmEg0nnHEFyQjI8UaTLohBUSxB017ZJszyCgkgVWHEF9XVoFmyidjCMMhrLr95taTj/N7RhwO3YcU9BTTtsqQigVPvCpzDFjhfL8AMZi3BZSFI2VfKBxKB+IbZ2WS2NmqrCZhzNmc2LrakqUV8Oqth6pJorOds/inl4p0i3DvxeSnexXP3O59Sdv8s0+7Vu3/sWM+v1v3r5kiVM2ycZbAaQcSux6acoTEYempN2HI4au+QtrFmS3O2LG3j+I5C4LbrvoF3S5jljYK8lzCFxA9zj9isReU+NVIb0xNEyHVzS3V5kn+YdWbLOAf+fJabj/VDEA4gbhjs44fd3kY7zU7umJ4cd4v46kAl0mUPIJrM3cfhuqqOdoz6zhgQsGtx58/27nJKYNo7lvTsrpy7OARytCbVrsr+bCzXhzLPba8dUJWNCinS7Y7p7VC33fy+rI6OdNT2fgthmqdYNG2ai9QL5Mu/BzhiRjSvr/gABxlvcL+6rhrdNMvSRIdepGf8adH7znKO8p45qmdvvO1d7K5wX7Wcr5hNKuxUD/9tix/QFnc0RabXWVtcXYTQWxL6o0+dV3lBPSsQd9QZwRGj/02HmrYe/ePu4ehpgtUojbVC+13ThOZEThO1x/sBhRrL6ytq1Foku0RMuvJo86Q6PsSNamnn+Ly/6RH5DQbh9Gfkh4fH2fSy+m0dH179/NC8+B8=&lt;/diagram&gt;&lt;/mxfile&gt;"
+   style="background-color: rgb(255, 255, 255);"
+   id="svg1100"
+   sodipodi:docname="architecture-and-structure-class structure (1).svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+  <metadata
+     id="metadata1104">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1361"
+     id="namedview1102"
+     showgrid="false"
+     inkscape:zoom="0.85398959"
+     inkscape:cx="827.5"
+     inkscape:cy="588.5"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1100" />
+  <defs
+     id="defs236">
+    <clipPath
+       id="mx-clip-395-111-204-45-0">
+      <rect
+         x="395"
+         y="111"
+         width="204"
+         height="45"
+         id="rect2" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-759-218-24-0">
+      <rect
+         x="592"
+         y="759"
+         width="218"
+         height="24"
+         id="rect5" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-783-218-24-0">
+      <rect
+         x="592"
+         y="783"
+         width="218"
+         height="24"
+         id="rect8" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-806-218-24-0">
+      <rect
+         x="592"
+         y="806"
+         width="218"
+         height="24"
+         id="rect11" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-830-218-24-0">
+      <rect
+         x="592"
+         y="830"
+         width="218"
+         height="24"
+         id="rect14" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-853-218-24-0">
+      <rect
+         x="592"
+         y="853"
+         width="218"
+         height="24"
+         id="rect17" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-876-218-24-0">
+      <rect
+         x="592"
+         y="876"
+         width="218"
+         height="24"
+         id="rect20" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-900-218-24-0">
+      <rect
+         x="592"
+         y="900"
+         width="218"
+         height="24"
+         id="rect23" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-947-218-24-0">
+      <rect
+         x="592"
+         y="947"
+         width="218"
+         height="24"
+         id="rect26" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-970-218-24-0">
+      <rect
+         x="592"
+         y="970"
+         width="218"
+         height="24"
+         id="rect29" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-993-218-24-0">
+      <rect
+         x="592"
+         y="993"
+         width="218"
+         height="24"
+         id="rect32" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-1017-218-24-0">
+      <rect
+         x="592"
+         y="1017"
+         width="218"
+         height="24"
+         id="rect35" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-1047-218-24-0">
+      <rect
+         x="592"
+         y="1047"
+         width="218"
+         height="24"
+         id="rect38" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-592-1071-218-24-0">
+      <rect
+         x="592"
+         y="1071"
+         width="218"
+         height="24"
+         id="rect41" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-385-354-272-24-0">
+      <rect
+         x="385"
+         y="354"
+         width="272"
+         height="24"
+         id="rect44" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-385-378-272-24-0">
+      <rect
+         x="385"
+         y="378"
+         width="272"
+         height="24"
+         id="rect47" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-385-401-272-24-0">
+      <rect
+         x="385"
+         y="401"
+         width="272"
+         height="24"
+         id="rect50" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-385-432-272-31-0">
+      <rect
+         x="385"
+         y="432"
+         width="272"
+         height="31"
+         id="rect53" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-385-462-272-24-0">
+      <rect
+         x="385"
+         y="462"
+         width="272"
+         height="24"
+         id="rect56" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-385-486-272-24-0">
+      <rect
+         x="385"
+         y="486"
+         width="272"
+         height="24"
+         id="rect59" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-862-210-290-24-0">
+      <rect
+         x="862"
+         y="210"
+         width="290"
+         height="24"
+         id="rect62" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-862-241-290-24-0">
+      <rect
+         x="862"
+         y="241"
+         width="290"
+         height="24"
+         id="rect65" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-862-264-290-24-0">
+      <rect
+         x="862"
+         y="264"
+         width="290"
+         height="24"
+         id="rect68" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-862-311-290-24-0">
+      <rect
+         x="862"
+         y="311"
+         width="290"
+         height="24"
+         id="rect71" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-862-335-290-24-0">
+      <rect
+         x="862"
+         y="335"
+         width="290"
+         height="24"
+         id="rect74" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-655-165-137-24-0">
+      <rect
+         x="655"
+         y="165"
+         width="137"
+         height="24"
+         id="rect77" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-655-189-137-24-0">
+      <rect
+         x="655"
+         y="189"
+         width="137"
+         height="24"
+         id="rect80" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-655-212-137-24-0">
+      <rect
+         x="655"
+         y="212"
+         width="137"
+         height="24"
+         id="rect83" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-655-243-137-24-0">
+      <rect
+         x="655"
+         y="243"
+         width="137"
+         height="24"
+         id="rect86" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-394-1001-119-24-0">
+      <rect
+         x="394"
+         y="1001"
+         width="119"
+         height="24"
+         id="rect89" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-394-1024-119-24-0">
+      <rect
+         x="394"
+         y="1024"
+         width="119"
+         height="24"
+         id="rect92" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-394-1047-119-24-0">
+      <rect
+         x="394"
+         y="1047"
+         width="119"
+         height="24"
+         id="rect95" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1111-480-200-24-0">
+      <rect
+         x="1111"
+         y="480"
+         width="200"
+         height="24"
+         id="rect98" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1111-511-200-24-0">
+      <rect
+         x="1111"
+         y="511"
+         width="200"
+         height="24"
+         id="rect101" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-754-480-196-24-0">
+      <rect
+         x="754"
+         y="480"
+         width="196"
+         height="24"
+         id="rect104" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-754-510-196-24-0">
+      <rect
+         x="754"
+         y="510"
+         width="196"
+         height="24"
+         id="rect107" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-925-589-207-24-0">
+      <rect
+         x="925"
+         y="589"
+         width="207"
+         height="24"
+         id="rect110" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-925-620-207-24-0">
+      <rect
+         x="925"
+         y="620"
+         width="207"
+         height="24"
+         id="rect113" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-385-578-272-24-0">
+      <rect
+         x="385"
+         y="578"
+         width="272"
+         height="24"
+         id="rect116" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-385-608-272-24-0">
+      <rect
+         x="385"
+         y="608"
+         width="272"
+         height="24"
+         id="rect119" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-385-632-272-24-0">
+      <rect
+         x="385"
+         y="632"
+         width="272"
+         height="24"
+         id="rect122" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-61-219-263-24-0">
+      <rect
+         x="61"
+         y="219"
+         width="263"
+         height="24"
+         id="rect125" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-61-243-263-24-0">
+      <rect
+         x="61"
+         y="243"
+         width="263"
+         height="24"
+         id="rect128" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-61-273-263-24-0">
+      <rect
+         x="61"
+         y="273"
+         width="263"
+         height="24"
+         id="rect131" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-151-526-119-24-0">
+      <rect
+         x="151"
+         y="526"
+         width="119"
+         height="24"
+         id="rect134" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-151-550-119-24-0">
+      <rect
+         x="151"
+         y="550"
+         width="119"
+         height="24"
+         id="rect137" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-151-573-119-24-0">
+      <rect
+         x="151"
+         y="573"
+         width="119"
+         height="24"
+         id="rect140" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-151-597-119-24-0">
+      <rect
+         x="151"
+         y="597"
+         width="119"
+         height="24"
+         id="rect143" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-286-822-227-24-0">
+      <rect
+         x="286"
+         y="822"
+         width="227"
+         height="24"
+         id="rect146" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-286-845-227-24-0">
+      <rect
+         x="286"
+         y="845"
+         width="227"
+         height="24"
+         id="rect149" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-286-876-227-24-0">
+      <rect
+         x="286"
+         y="876"
+         width="227"
+         height="24"
+         id="rect152" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-286-899-227-24-0">
+      <rect
+         x="286"
+         y="899"
+         width="227"
+         height="24"
+         id="rect155" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-1128-142-24-0">
+      <rect
+         x="918"
+         y="1128"
+         width="142"
+         height="24"
+         id="rect158" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-1151-142-24-0">
+      <rect
+         x="918"
+         y="1151"
+         width="142"
+         height="24"
+         id="rect161" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-1024-142-24-0">
+      <rect
+         x="918"
+         y="1024"
+         width="142"
+         height="24"
+         id="rect164" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-1047-142-24-0">
+      <rect
+         x="918"
+         y="1047"
+         width="142"
+         height="24"
+         id="rect167" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-856-142-24-0">
+      <rect
+         x="918"
+         y="856"
+         width="142"
+         height="24"
+         id="rect170" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-879-142-24-0">
+      <rect
+         x="918"
+         y="879"
+         width="142"
+         height="24"
+         id="rect173" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-903-142-24-0">
+      <rect
+         x="918"
+         y="903"
+         width="142"
+         height="24"
+         id="rect176" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-926-142-24-0">
+      <rect
+         x="918"
+         y="926"
+         width="142"
+         height="24"
+         id="rect179" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-949-142-24-0">
+      <rect
+         x="918"
+         y="949"
+         width="142"
+         height="24"
+         id="rect182" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1366-489-281-24-0">
+      <rect
+         x="1366"
+         y="489"
+         width="281"
+         height="24"
+         id="rect185" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1366-520-281-24-0">
+      <rect
+         x="1366"
+         y="520"
+         width="281"
+         height="24"
+         id="rect188" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1366-543-281-24-0">
+      <rect
+         x="1366"
+         y="543"
+         width="281"
+         height="24"
+         id="rect191" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1366-567-281-24-0">
+      <rect
+         x="1366"
+         y="567"
+         width="281"
+         height="24"
+         id="rect194" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1366-590-281-24-0">
+      <rect
+         x="1366"
+         y="590"
+         width="281"
+         height="24"
+         id="rect197" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-723-441-24-0">
+      <rect
+         x="918"
+         y="723"
+         width="441"
+         height="24"
+         id="rect200" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-747-441-24-0">
+      <rect
+         x="918"
+         y="747"
+         width="441"
+         height="24"
+         id="rect203" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-918-777-441-24-0">
+      <rect
+         x="918"
+         y="777"
+         width="441"
+         height="24"
+         id="rect206" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1121-901-142-24-0">
+      <rect
+         x="1121"
+         y="901"
+         width="142"
+         height="24"
+         id="rect209" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1121-924-142-24-0">
+      <rect
+         x="1121"
+         y="924"
+         width="142"
+         height="24"
+         id="rect212" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1121-948-142-24-0">
+      <rect
+         x="1121"
+         y="948"
+         width="142"
+         height="24"
+         id="rect215" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1121-971-142-24-0">
+      <rect
+         x="1121"
+         y="971"
+         width="142"
+         height="24"
+         id="rect218" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1121-994-142-24-0">
+      <rect
+         x="1121"
+         y="994"
+         width="142"
+         height="24"
+         id="rect221" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1222-218-281-24-0">
+      <rect
+         x="1222"
+         y="218"
+         width="281"
+         height="24"
+         id="rect224" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1222-241-281-24-0">
+      <rect
+         x="1222"
+         y="241"
+         width="281"
+         height="24"
+         id="rect227" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1222-264-281-24-0">
+      <rect
+         x="1222"
+         y="264"
+         width="281"
+         height="24"
+         id="rect230" />
+    </clipPath>
+    <clipPath
+       id="mx-clip-1222-288-281-24-0">
+      <rect
+         x="1222"
+         y="288"
+         width="281"
+         height="24"
+         id="rect233" />
+    </clipPath>
+  </defs>
+  <g
+     id="g1090"
+     transform="translate(-14,-6)">
+    <path
+       d="M 391.5,40.5 V 17.1 h 210.6 v 23.4"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path238" />
+    <path
+       d="M 391.5,40.5 V 161.1 H 602.1 V 40.5"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path240" />
+    <path
+       d="M 391.5,40.5 H 602.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path242" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-style="italic"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g246">
+      <text
+         x="496.29999"
+         y="32.799999"
+         id="text244">Main()</text>
+    </g>
+    <path
+       d="M 391.5,44.1 H 602.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path248" />
+    <rect
+       x="391.5"
+       y="47.700001"
+       width="210.60001"
+       height="59.400002"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect250" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-style="italic"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g258">
+      <text
+         x="496.29999"
+         y="68.800003"
+         id="text252">Holds logic for game setup and runs</text>
+      <text
+         x="496.29999"
+         y="81.400002"
+         id="text254"> the game loop where all objects</text>
+      <text
+         x="496.29999"
+         y="94"
+         id="text256">are instatiated.</text>
+    </g>
+    <rect
+       x="391.5"
+       y="107.1"
+       width="210.60001"
+       height="45"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect260" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-395-111-204-45-0)"
+       font-size="10.8px"
+       id="g266">
+      <text
+         x="396.39999"
+         y="122.8"
+         id="text262">Should maybe call an Game.update() for</text>
+      <text
+         x="396.39999"
+         y="135.39999"
+         id="text264"> graphics? idk how ggez works</text>
+    </g>
+    <path
+       d="m 534.6,314.1 v -25.2 h 144 v -23.19"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path268" />
+    <path
+       d="m 683.55,274.61 -4.95,-9.9 -4.95,9.9"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path270" />
+    <path
+       d="m 701.1,719.1 v -333 h 212.4 v -15.16"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path272" />
+    <path
+       d="m 913.5,355.64 4.5,7.65 -4.5,7.65 -4.5,-7.65 z"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path274" />
+    <path
+       d="m 651.6,719.1 v -18 h -126 l -0.02,-34.84"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path276" />
+    <path
+       d="m 525.56,650.96 4.51,7.64 -4.49,7.66 -4.51,-7.65 z"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path278" />
+    <path
+       d="m 757.35,719.1 v -63 h 756.45 v -30.61"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path280" />
+    <path
+       d="m 1513.8,610.19 4.5,7.65 -4.5,7.65 -4.5,-7.65 z"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path282" />
+    <path
+       d="m 588.6,755.1 v -36 h 225 v 36"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path284" />
+    <path
+       d="m 588.6,755.1 v 334.8 h 225 V 755.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path286" />
+    <path
+       d="m 588.6,755.1 h 225"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path288" />
+    <g
+       transform="matrix(0.9,0,0,0.9,-0.5,-0.5)"
+       id="g294">
+      <switch
+         id="switch292">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="112%"
+           height="112%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 806px; margin-left: 779px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; font-weight: bold; white-space: nowrap; ">&lt;&lt;struct&gt;&gt;<xhtml:br
+   style="padding: 0px ; margin: 0px" />
+Card</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="779"
+           y="818"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           font-weight="bold"
+           id="text290">&lt;&lt;struct&gt;&gt;...</text>
+      </switch>
+    </g>
+    <rect
+       x="588.59998"
+       y="755.09998"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect296" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-759-218-24-0)"
+       font-size="10.8px"
+       id="g302">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="593"
+         y="762"
+         width="117"
+         height="14"
+         stroke-width="0"
+         id="rect298" />
+      <text
+         x="593.5"
+         y="770.79999"
+         id="text300">+ position: CardPosition</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="778.5"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect304" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-783-218-24-0)"
+       font-size="10.8px"
+       id="g310">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="593"
+         y="785"
+         width="82"
+         height="14"
+         stroke-width="0"
+         id="rect306" />
+      <text
+         x="593.5"
+         y="794.20001"
+         id="text308">+ owner: *Player</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="801.90002"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect312" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-806-218-24-0)"
+       font-size="10.8px"
+       id="g316">
+      <text
+         x="593.5"
+         y="817.59998"
+         id="text314">+ used: bool</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="825.29999"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect318" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-830-218-24-0)"
+       font-size="10.8px"
+       id="g322">
+      <text
+         x="593.5"
+         y="841"
+         id="text320">+ mana: isize</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="848.70001"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect324" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-853-218-24-0)"
+       font-size="10.8px"
+       id="g328">
+      <text
+         x="593.5"
+         y="864.40002"
+         id="text326">+ mana_tokens: ManaTokenPool</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="872.09998"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect330" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-876-218-24-0)"
+       font-size="10.8px"
+       id="g334">
+      <text
+         x="593.5"
+         y="887.79999"
+         id="text332">+ damage: isize</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="895.5"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect336" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-900-218-24-0)"
+       font-size="10.8px"
+       id="g340">
+      <text
+         x="593.5"
+         y="911.20001"
+         id="text338">+ health: isize</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="918.90002"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect342" />
+    <g
+       transform="matrix(0.9,0,0,0.9,-0.5,-0.5)"
+       id="g348">
+      <switch
+         id="switch346">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="112%"
+           height="112%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 240px; height: 1px; padding-top: 1028px; margin-left: 660px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: left; max-height: 22px; overflow: hidden; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; white-space: nowrap; ">+ school: CardSchool</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="660"
+           y="1040"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           id="text344">+ school: CardSchool</text>
+      </switch>
+    </g>
+    <rect
+       x="588.59998"
+       y="942.29999"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect350" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-947-218-24-0)"
+       font-size="10.8px"
+       id="g354">
+      <text
+         x="593.5"
+         y="958"
+         id="text352">+ type: CardType</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="965.70001"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect356" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-970-218-24-0)"
+       font-size="10.8px"
+       id="g360">
+      <text
+         x="593.5"
+         y="981.40002"
+         id="text358">+ sub_type: Option&lt;CardSubType&gt;</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="989.09998"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect362" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-993-218-24-0)"
+       font-size="10.8px"
+       id="g366">
+      <text
+         x="593.5"
+         y="1004.8"
+         id="text364">+ effects: Vec&lt;(Effect, int,)&gt;</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="1012.5"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect368" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-1017-218-24-0)"
+       font-size="10.8px"
+       id="g372">
+      <text
+         x="593.5"
+         y="1028.2"
+         id="text370">+ text: String</text>
+    </g>
+    <path
+       d="m 588.6,1039.5 h 225"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path374" />
+    <rect
+       x="588.59998"
+       y="1043.1"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect376" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-1047-218-24-0)"
+       font-size="10.8px"
+       id="g380">
+      <text
+         x="593.5"
+         y="1058.8"
+         id="text378">+ mod_mana(num: isize): Result&lt;T, E&gt;</text>
+    </g>
+    <rect
+       x="588.59998"
+       y="1066.5"
+       width="225"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect382" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-592-1071-218-24-0)"
+       font-size="10.8px"
+       id="g386">
+      <text
+         x="593.5"
+         y="1082.2"
+         id="text384">+ mod_mana_tokens(num: isize): Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="M 914.26,834.63 849.6,834.6 v 96 h -19.81"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path388" />
+    <path
+       d="m 814.49,930.6 7.65,-4.5 7.65,4.5 -7.65,4.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path390" />
+    <path
+       d="m 914.85,1006.42 -20.25,0.08 V 954 h -64.81"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path392" />
+    <path
+       d="m 814.49,954 7.65,-4.5 7.65,4.5 -7.65,4.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path394" />
+    <path
+       d="m 381.6,350.1 v -36 h 279 v 36"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path396" />
+    <path
+       d="m 381.6,350.1 v 154.8 h 279 V 350.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path398" />
+    <path
+       d="m 381.6,350.1 h 279"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path400" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g406">
+      <text
+         x="520.59998"
+         y="329.79999"
+         id="text402">&lt;&lt;struct&gt;&gt;</text>
+      <text
+         x="520.59998"
+         y="342.39999"
+         id="text404">Player</text>
+    </g>
+    <rect
+       x="381.60001"
+       y="350.10001"
+       width="279"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect408" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-385-354-272-24-0)"
+       font-size="10.8px"
+       id="g412">
+      <text
+         x="386.5"
+         y="365.79999"
+         id="text410">+ health: isize</text>
+    </g>
+    <rect
+       x="381.60001"
+       y="373.5"
+       width="279"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect414" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-385-378-272-24-0)"
+       font-size="10.8px"
+       id="g418">
+      <text
+         x="386.5"
+         y="389.20001"
+         id="text416">+ hand: Hand&lt;Card&gt;</text>
+    </g>
+    <rect
+       x="381.60001"
+       y="396.89999"
+       width="279"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect420" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-385-401-272-24-0)"
+       font-size="10.8px"
+       id="g424">
+      <text
+         x="386.5"
+         y="412.60001"
+         id="text422">+ special_ability: Vec&lt;(String, int,)&gt;</text>
+    </g>
+    <path
+       d="m 381.6,423.9 h 279"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path426" />
+    <rect
+       x="381.60001"
+       y="427.5"
+       width="279"
+       height="30.6"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect428" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-385-432-272-31-0)"
+       font-size="10.8px"
+       id="g432">
+      <text
+         x="386.5"
+         y="443.20001"
+         id="text430">+ play(Option&lt;Card&gt;, Option&lt;Target&gt;): Result&lt;T, E&gt;</text>
+    </g>
+    <rect
+       x="381.60001"
+       y="458.10001"
+       width="279"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect434" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-385-462-272-24-0)"
+       font-size="10.8px"
+       id="g438">
+      <text
+         x="386.5"
+         y="473.79999"
+         id="text436">+ pass(): Result&lt;T, E&gt;</text>
+    </g>
+    <rect
+       x="381.60001"
+       y="481.5"
+       width="279"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect440" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-385-486-272-24-0)"
+       font-size="10.8px"
+       id="g444">
+      <text
+         x="386.5"
+         y="497.20001"
+         id="text442">+ use_ability: Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="m 858.6,188.1 h -18 v 135 h -117 v -59.19"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path446" />
+    <path
+       d="m 728.55,272.81 -4.95,-9.9 -4.95,9.9"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path448" />
+    <path
+       d="m 858.6,206.1 v -36 h 297 v 36"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path450" />
+    <path
+       d="m 858.6,206.1 v 147.6 h 297 V 206.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path452" />
+    <path
+       d="m 858.6,206.1 h 297"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path454" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g460">
+      <text
+         x="1006.6"
+         y="185.8"
+         id="text456">&lt;&lt;trait&gt;&gt; </text>
+      <text
+         x="1006.6"
+         y="198.39999"
+         id="text458">Pile</text>
+    </g>
+    <rect
+       x="858.59998"
+       y="206.10001"
+       width="297"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect462" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-862-210-290-24-0)"
+       font-size="10.8px"
+       id="g466">
+      <text
+         x="863.5"
+         y="221.8"
+         id="text464">+ num_cards: usize</text>
+    </g>
+    <path
+       d="m 858.6,233.1 h 297"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path468" />
+    <rect
+       x="858.59998"
+       y="236.7"
+       width="297"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect470" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-862-241-290-24-0)"
+       font-size="10.8px"
+       id="g474">
+      <text
+         x="863.5"
+         y="252.39999"
+         id="text472">+ draw(num: usize): Result&lt;Card, E&gt;</text>
+    </g>
+    <rect
+       x="858.59998"
+       y="260.10001"
+       width="297"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect476" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-862-264-290-24-0)"
+       font-size="10.8px"
+       id="g480">
+      <text
+         x="863.5"
+         y="275.79999"
+         id="text478">+ draw(num: usize).from(source: String): Result&lt;Card, E&gt;</text>
+    </g>
+    <rect
+       x="858.59998"
+       y="283.5"
+       width="297"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect482" />
+    <g
+       transform="matrix(0.9,0,0,0.9,-0.5,-0.5)"
+       id="g488">
+      <switch
+         id="switch486">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="112%"
+           height="112%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 320px; height: 1px; padding-top: 322px; margin-left: 960px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: left; max-height: 22px; overflow: hidden; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: none; white-space: nowrap; ">+ add(cards: Vec&lt;Card&gt;): Result&lt;T, E&gt;</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="960"
+           y="334"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           id="text484">+ add(cards: Vec&lt;Card&gt;): Result&lt;T, E&gt;</text>
+      </switch>
+    </g>
+    <rect
+       x="858.59998"
+       y="306.89999"
+       width="297"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect490" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-862-311-290-24-0)"
+       font-size="10.8px"
+       id="g494">
+      <text
+         x="863.5"
+         y="322.60001"
+         id="text492">+ shuffle(): Result&lt;T, E&gt;</text>
+    </g>
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-862-335-290-24-0)"
+       font-size="10.8px"
+       id="g498">
+      <text
+         x="863.5"
+         y="346"
+         id="text496">+ update_card_positions(): Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="M 915.15,1106.4 H 849.6 v -129 h -19.81"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path500" />
+    <path
+       d="m 814.49,977.4 7.65,-4.5 7.65,4.5 -7.65,4.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path502" />
+    <path
+       d="m 723.6,125.1 v -99 H 604.11"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path504" />
+    <path
+       d="m 612.11,21.6 -9,4.5 9,4.5"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path506" />
+    <path
+       d="m 651.6,161.1 v -36 h 144 v 36"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path508" />
+    <path
+       d="m 651.6,161.1 v 100.8 h 144 V 161.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path510" />
+    <path
+       d="m 651.6,161.1 h 144"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path512" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g518">
+      <text
+         x="723.09998"
+         y="140.8"
+         id="text514">&lt;&lt;struct&gt;&gt;</text>
+      <text
+         x="723.09998"
+         y="153.39999"
+         id="text516"> Game</text>
+    </g>
+    <rect
+       x="651.59998"
+       y="161.10001"
+       width="144"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect520" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-655-165-137-24-0)"
+       font-size="10.8px"
+       id="g524">
+      <text
+         x="656.5"
+         y="176.8"
+         id="text522">+ current_player: *Player</text>
+    </g>
+    <rect
+       x="651.59998"
+       y="184.5"
+       width="144"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect526" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-655-189-137-24-0)"
+       font-size="10.8px"
+       id="g530">
+      <text
+         x="656.5"
+         y="200.2"
+         id="text528">+ focused_player: *Player</text>
+    </g>
+    <rect
+       x="651.59998"
+       y="207.89999"
+       width="144"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect532" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-655-212-137-24-0)"
+       font-size="10.8px"
+       id="g536">
+      <text
+         x="656.5"
+         y="223.60001"
+         id="text534">+ in_play: Vec&lt;Card&gt;</text>
+    </g>
+    <path
+       d="m 651.6,234.9 h 144"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path538" />
+    <rect
+       x="651.59998"
+       y="238.5"
+       width="144"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect540" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-655-243-137-24-0)"
+       font-size="10.8px"
+       id="g544">
+      <text
+         x="656.5"
+         y="254.2"
+         id="text542">+ update(): Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="M 390.6,996.3 V 963 h 126 v 33.3"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path546" />
+    <path
+       d="m 390.6,996.3 v 70.2 h 126 v -70.2"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path548" />
+    <path
+       d="m 390.6,996.3 h 126"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path550" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g556">
+      <text
+         x="453.10001"
+         y="977.34998"
+         id="text552">&lt;&lt;enum&gt;&gt;</text>
+      <text
+         x="453.10001"
+         y="989.95001"
+         id="text554">Effect</text>
+    </g>
+    <rect
+       x="390.60001"
+       y="996.29999"
+       width="126"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect558" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-394-1001-119-24-0)"
+       font-size="10.8px"
+       id="g562">
+      <text
+         x="395.5"
+         y="1012"
+         id="text560">DamageTarget</text>
+    </g>
+    <rect
+       x="390.60001"
+       y="1019.7"
+       width="126"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect564" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-394-1024-119-24-0)"
+       font-size="10.8px"
+       id="g568">
+      <text
+         x="395.5"
+         y="1035.4"
+         id="text566">PH</text>
+    </g>
+    <rect
+       x="390.60001"
+       y="1043.1"
+       width="126"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect570" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-394-1047-119-24-0)"
+       font-size="10.8px"
+       id="g574">
+      <text
+         x="395.5"
+         y="1058.8"
+         id="text572">PH</text>
+    </g>
+    <path
+       d="m 516.22,978.21 27.38,-0.06 v 22.65 h 28.81"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path576" />
+    <path
+       d="m 587.71,1000.8 -7.65,4.5 -7.65,-4.5 7.65,-4.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path578" />
+    <path
+       d="m 1185.52,439.2 0.08,-26.1 h -107.25 l 0.02,-44"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="2.7, 2.7"
+       pointer-events="none"
+       id="path580" />
+    <path
+       d="m 1078.38,355.6 6.74,13.5 -13.5,-0.01 z"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path582" />
+    <path
+       d="m 1263.15,440.1 v 9 h -26.55 v -63 h 98.1 l -0.03,-62.73"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="2.7, 2.7"
+       pointer-events="none"
+       id="path584" />
+    <path
+       d="m 1334.66,309.87 6.76,13.5 h -13.5 z"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path586" />
+    <path
+       d="m 1107.9,476.1 v -36 h 207 v 36"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path588" />
+    <path
+       d="m 1107.9,476.1 v 54 h 207 v -54"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path590" />
+    <path
+       d="m 1107.9,476.1 h 207"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path592" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g598">
+      <text
+         x="1210.9"
+         y="455.79999"
+         id="text594">&lt;&lt;struct&gt;&gt;</text>
+      <text
+         x="1210.9"
+         y="468.39999"
+         id="text596">Stack</text>
+    </g>
+    <rect
+       x="1107.9"
+       y="476.10001"
+       width="207"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect600" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1111-480-200-24-0)"
+       font-size="10.8px"
+       id="g604">
+      <text
+         x="1112.8"
+         y="491.79999"
+         id="text602">+ cards: Vec&lt;Card&gt;</text>
+    </g>
+    <path
+       d="m 1107.9,503.1 h 207"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path606" />
+    <rect
+       x="1107.9"
+       y="506.70001"
+       width="207"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect608" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1111-511-200-24-0)"
+       font-size="10.8px"
+       id="g612">
+      <text
+         x="1112.8"
+         y="522.40002"
+         id="text610">+ exile(cards: Vec&lt;Card&gt;): Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="m 837,440.1 v -27 H 972.15 L 972.08,369"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="2.7, 2.7"
+       pointer-events="none"
+       id="path614" />
+    <path
+       d="m 972.06,355.5 6.77,13.49 -13.5,0.02 z"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path616" />
+    <path
+       d="m 750.6,475.2 v -35.1 h 202.5 v 35.1"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path618" />
+    <path
+       d="m 750.6,475.2 v 54 h 202.5 v -54"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path620" />
+    <path
+       d="M 750.6,475.2 H 953.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path622" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g628">
+      <text
+         x="851.34998"
+         y="455.79999"
+         id="text624">&lt;&lt;struct&gt;&gt;</text>
+      <text
+         x="851.34998"
+         y="468.39999"
+         id="text626">Deck</text>
+    </g>
+    <rect
+       x="750.59998"
+       y="475.20001"
+       width="202.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect630" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-754-480-196-24-0)"
+       font-size="10.8px"
+       id="g634">
+      <text
+         x="755.5"
+         y="490.89999"
+         id="text632">+ cards: VecDeque&lt;Card&gt;</text>
+    </g>
+    <path
+       d="M 750.6,502.2 H 953.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path636" />
+    <rect
+       x="750.59998"
+       y="505.79999"
+       width="202.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect638" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-754-510-196-24-0)"
+       font-size="10.8px"
+       id="g642">
+      <text
+         x="755.5"
+         y="521.5"
+         id="text640">+ exile(cards: Vec&lt;Card&gt;): Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="m 1028.47,549.9 h -1.57 v -82.8 l 0.35,-99.2"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="2.7, 2.7"
+       pointer-events="none"
+       id="path644" />
+    <path
+       d="m 1027.29,354.4 6.71,13.53 -13.5,-0.05 z"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path646" />
+    <path
+       d="m 921.6,585 v -35.1 h 213.75 V 585"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path648" />
+    <path
+       d="m 921.6,585 v 54 h 213.75 v -54"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path650" />
+    <path
+       d="m 921.6,585 h 213.75"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path652" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g658">
+      <text
+         x="1027.97"
+         y="565.59998"
+         id="text654">&lt;&lt;struct&gt;&gt;</text>
+      <text
+         x="1027.97"
+         y="578.20001"
+         id="text656">Exile</text>
+    </g>
+    <rect
+       x="921.59998"
+       y="585"
+       width="213.75"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect660" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-925-589-207-24-0)"
+       font-size="10.8px"
+       id="g664">
+      <text
+         x="926.5"
+         y="600.70001"
+         id="text662">+ cards: Vec&lt;Card&gt;</text>
+    </g>
+    <path
+       d="m 921.6,612 h 213.75"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path666" />
+    <rect
+       x="921.59998"
+       y="615.59998"
+       width="213.75"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect668" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-925-620-207-24-0)"
+       font-size="10.8px"
+       id="g672">
+      <text
+         x="926.5"
+         y="631.29999"
+         id="text670">+ return(cards: Vec&lt;Card&gt;): Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="m 521.1,538.2 -0.45,-15.92"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path674" />
+    <path
+       d="m 520.22,506.99 4.72,7.52 -4.29,7.77 -4.71,-7.52 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path676" />
+    <path
+       d="m 381.6,573.3 v -35.1 h 279 v 35.1"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path678" />
+    <path
+       d="m 381.6,573.3 v 77.4 h 279 v -77.4"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path680" />
+    <path
+       d="m 381.6,573.3 h 279"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path682" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g688">
+      <text
+         x="520.59998"
+         y="553.90002"
+         id="text684">&lt;&lt;struct&gt;&gt;</text>
+      <text
+         x="520.59998"
+         y="566.5"
+         id="text686">Hand</text>
+    </g>
+    <rect
+       x="381.60001"
+       y="573.29999"
+       width="279"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect690" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-385-578-272-24-0)"
+       font-size="10.8px"
+       id="g694">
+      <text
+         x="386.5"
+         y="589"
+         id="text692">+ cards: Vec&lt;Card&gt;</text>
+    </g>
+    <path
+       d="m 381.6,600.3 h 279"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path696" />
+    <rect
+       x="381.60001"
+       y="603.90002"
+       width="279"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect698" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-385-608-272-24-0)"
+       font-size="10.8px"
+       id="g702">
+      <text
+         x="386.5"
+         y="619.59998"
+         id="text700">+ exile(Vec&lt;Card&gt;): Result&lt;T, E&gt;</text>
+    </g>
+    <rect
+       x="381.60001"
+       y="627.29999"
+       width="279"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect704" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-385-632-272-24-0)"
+       font-size="9.9px"
+       id="g708">
+      <text
+         x="386.5"
+         y="642.09998"
+         id="text706">+ sacrifice(Vec&lt;Card&gt;, Target): Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="m 57.6,215.1 v -36 h 270 v 36"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path710" />
+    <path
+       d="m 57.6,215.1 v 77.4 h 270 v -77.4"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path712" />
+    <path
+       d="m 57.6,215.1 h 270"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path714" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g720">
+      <text
+         x="192.10001"
+         y="194.8"
+         id="text716">&lt;&lt;trait&gt;&gt; </text>
+      <text
+         x="192.10001"
+         y="207.39999"
+         id="text718">Target</text>
+    </g>
+    <rect
+       x="57.599998"
+       y="215.10001"
+       width="270"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect722" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-61-219-263-24-0)"
+       font-size="10.8px"
+       id="g726">
+      <text
+         x="62.5"
+         y="230.8"
+         id="text724">+ target_type: Vec&lt;TargetType&gt;</text>
+    </g>
+    <rect
+       x="57.599998"
+       y="238.5"
+       width="270"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect728" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-61-243-263-24-0)"
+       font-size="10.8px"
+       id="g732">
+      <text
+         x="62.5"
+         y="254.2"
+         id="text730">+ is_targetable: bool</text>
+    </g>
+    <path
+       d="m 57.6,265.5 h 270"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path734" />
+    <rect
+       x="57.599998"
+       y="269.10001"
+       width="270"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect736" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-61-273-263-24-0)"
+       font-size="10.8px"
+       id="g740">
+      <text
+         x="62.5"
+         y="284.79999"
+         id="text738">+ update_status(focused_player: *Player): void</text>
+    </g>
+    <path
+       d="M 379.09,335.09 201.6,335.1 v -28.09"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="2.7, 2.7"
+       pointer-events="none"
+       id="path742" />
+    <path
+       d="m 201.6,293.51 6.75,13.5 h -13.5 z"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path744" />
+    <path
+       d="m 588.6,742.5 h -261 v -369 H 170.4 l 0.05,-67.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="2.7, 2.7"
+       pointer-events="none"
+       id="path746" />
+    <path
+       d="m 170.46,292.9 6.74,13.5 -13.5,-0.01 z"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path748" />
+    <path
+       d="m 147.6,522 v -33.3 h 126 V 522"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path750" />
+    <path
+       d="m 147.6,522 v 93.6 h 126 V 522"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path752" />
+    <path
+       d="m 147.6,522 h 126"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path754" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g760">
+      <text
+         x="210.10001"
+         y="503.04999"
+         id="text756">&lt;&lt;enum&gt;&gt;</text>
+      <text
+         x="210.10001"
+         y="515.65002"
+         id="text758">TargetType</text>
+    </g>
+    <rect
+       x="147.60001"
+       y="522"
+       width="126"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect762" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-151-526-119-24-0)"
+       font-size="10.8px"
+       id="g766">
+      <text
+         x="152.5"
+         y="537.70001"
+         id="text764">Card</text>
+    </g>
+    <rect
+       x="147.60001"
+       y="545.40002"
+       width="126"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect768" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-151-550-119-24-0)"
+       font-size="10.8px"
+       id="g772">
+      <text
+         x="152.5"
+         y="561.09998"
+         id="text770">Player</text>
+    </g>
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-151-573-119-24-0)"
+       font-size="10.8px"
+       id="g776">
+      <text
+         x="152.5"
+         y="584.5"
+         id="text774">Opponent</text>
+    </g>
+    <rect
+       x="147.60001"
+       y="592.20001"
+       width="126"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect778" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-151-597-119-24-0)"
+       font-size="10.8px"
+       id="g782">
+      <text
+         x="152.5"
+         y="607.90002"
+         id="text780">Self</text>
+    </g>
+    <path
+       d="M 210.6,488.7 V 413.1 H 30.6 V 226.8 h 12.61"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path784" />
+    <path
+       d="m 56.71,226.8 -6.75,3.97 -6.75,-3.97 6.75,-3.97 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path786" />
+    <path
+       d="M 516.6,816.07 V 800.1 h 31.5 v 60.3 h 26.11"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path788" />
+    <path
+       d="m 587.71,860.4 -6.75,3.97 -6.75,-3.97 6.75,-3.97 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path790" />
+    <path
+       d="m 282.6,817.2 v -35.1 h 234 v 35.1"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path792" />
+    <path
+       d="M 282.6,817.2 V 918 h 234 V 817.2"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path794" />
+    <path
+       d="m 282.6,817.2 h 234"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path796" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g802">
+      <text
+         x="399.10001"
+         y="797.79999"
+         id="text798">&lt;&lt;struct&gt;&gt;</text>
+      <text
+         x="399.10001"
+         y="810.40002"
+         id="text800">ManaTokenPool</text>
+    </g>
+    <rect
+       x="282.60001"
+       y="817.20001"
+       width="234"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect804" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-286-822-227-24-0)"
+       font-size="10.8px"
+       id="g808">
+      <text
+         x="287.5"
+         y="832.90002"
+         id="text806">+ num_unused: isize</text>
+    </g>
+    <rect
+       x="282.60001"
+       y="840.59998"
+       width="234"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect810" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-286-845-227-24-0)"
+       font-size="10.8px"
+       id="g814">
+      <text
+         x="287.5"
+         y="856.29999"
+         id="text812">+ pool_size: isize</text>
+    </g>
+    <path
+       d="m 282.6,867.6 h 234"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path816" />
+    <rect
+       x="282.60001"
+       y="871.20001"
+       width="234"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect818" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-286-876-227-24-0)"
+       font-size="10.8px"
+       id="g822">
+      <text
+         x="287.5"
+         y="886.90002"
+         id="text820">+ use(num: Option&lt;isize&gt;): Result&lt;T, E&gt;</text>
+    </g>
+    <rect
+       x="282.60001"
+       y="894.59998"
+       width="234"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect824" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-286-899-227-24-0)"
+       font-size="10.8px"
+       id="g828">
+      <text
+         x="287.5"
+         y="910.29999"
+         id="text826">+ modify_pool_size(num: isize): Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="m 914.85,1123.2 v -33.3 h 148.5 v 33.3"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path830" />
+    <path
+       d="m 914.85,1123.2 v 46.8 h 148.5 v -46.8"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path832" />
+    <path
+       d="m 914.85,1123.2 h 148.5"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path834" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g840">
+      <text
+         x="988.59998"
+         y="1104.25"
+         id="text836">&lt;&lt;enum&gt;&gt;</text>
+      <text
+         x="988.59998"
+         y="1116.85"
+         id="text838">CardSubType</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="1123.2"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect842" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-1128-142-24-0)"
+       font-size="10.8px"
+       id="g846">
+      <text
+         x="919.75"
+         y="1138.9"
+         id="text844">Professor</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="1146.6"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect848" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-1151-142-24-0)"
+       font-size="10.8px"
+       id="g852">
+      <text
+         x="919.75"
+         y="1162.3"
+         id="text850">Student</text>
+    </g>
+    <path
+       d="m 914.85,1019.7 v -33.3 h 148.5 v 33.3"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path854" />
+    <path
+       d="m 914.85,1019.7 v 46.8 h 148.5 v -46.8"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path856" />
+    <path
+       d="m 914.85,1019.7 h 148.5"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path858" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g864">
+      <text
+         x="988.59998"
+         y="1000.75"
+         id="text860">&lt;&lt;enum&gt;&gt;</text>
+      <text
+         x="988.59998"
+         y="1013.35"
+         id="text862">CardType</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="1019.7"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect866" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-1024-142-24-0)"
+       font-size="10.8px"
+       id="g870">
+      <text
+         x="919.75"
+         y="1035.4"
+         id="text868">Event (sorcery)</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="1043.1"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect872" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-1047-142-24-0)"
+       font-size="10.8px"
+       id="g876">
+      <text
+         x="919.75"
+         y="1058.8"
+         id="text874">Person (creature)</text>
+    </g>
+    <path
+       d="m 914.85,851.4 v -33.3 h 148.5 v 33.3"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path878" />
+    <path
+       d="m 914.85,851.4 v 117 h 148.5 v -117"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path880" />
+    <path
+       d="m 914.85,851.4 h 148.5"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path882" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g888">
+      <text
+         x="988.59998"
+         y="832.45001"
+         id="text884">&lt;&lt;enum&gt;&gt;</text>
+      <text
+         x="988.59998"
+         y="845.04999"
+         id="text886">CardSchool</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="851.40002"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect890" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-856-142-24-0)"
+       font-size="10.8px"
+       id="g894">
+      <text
+         x="919.75"
+         y="867.09998"
+         id="text892">EECS</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="874.79999"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect896" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-879-142-24-0)"
+       font-size="10.8px"
+       id="g900">
+      <text
+         x="919.75"
+         y="890.5"
+         id="text898">ABE</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="898.20001"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect902" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-903-142-24-0)"
+       font-size="10.8px"
+       id="g906">
+      <text
+         x="919.75"
+         y="913.90002"
+         id="text904">ITM</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="921.59998"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect908" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-926-142-24-0)"
+       font-size="10.8px"
+       id="g912">
+      <text
+         x="919.75"
+         y="937.29999"
+         id="text910">SCI</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="945"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect914" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-949-142-24-0)"
+       font-size="10.8px"
+       id="g918">
+      <text
+         x="919.75"
+         y="960.70001"
+         id="text916">CCH</text>
+    </g>
+    <path
+       d="m 1506.6,449.1 v -63 h -126 v -66.49"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="2.7, 2.7"
+       pointer-events="none"
+       id="path920" />
+    <path
+       d="m 1380.6,306.11 6.75,13.5 h -13.5 z"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path922" />
+    <path
+       d="m 1578.6,449.1 v -306 h -765 v 144 h -44.4 l -0.09,-23.3"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path924" />
+    <path
+       d="m 774.55,273.57 -5.44,-10.78 -5.36,10.82"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path926" />
+    <path
+       d="m 1362.6,485.1 v -36 h 288 v 36"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path928" />
+    <path
+       d="m 1362.6,485.1 v 124.2 h 288 V 485.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path930" />
+    <path
+       d="m 1362.6,485.1 h 288"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path932" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g938">
+      <text
+         x="1506.1"
+         y="464.79999"
+         id="text934">&lt;&lt;struct&gt;&gt;</text>
+      <text
+         x="1506.1"
+         y="477.39999"
+         id="text936">Board</text>
+    </g>
+    <rect
+       x="1362.6"
+       y="485.10001"
+       width="288"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect940" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1366-489-281-24-0)"
+       font-size="10.8px"
+       id="g944">
+      <text
+         x="1367.5"
+         y="500.79999"
+         id="text942">+ cards: Vec&lt;Card&gt; OR HashMap&lt;(isize, isize), Card&gt; </text>
+    </g>
+    <path
+       d="m 1362.6,512.1 h 288"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path946" />
+    <rect
+       x="1362.6"
+       y="515.70001"
+       width="288"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect948" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1366-520-281-24-0)"
+       font-size="10.8px"
+       id="g952">
+      <text
+         x="1367.5"
+         y="531.40002"
+         id="text950">+ place(cards: Vec&lt;Card&gt;): Result&lt;T, E&gt;</text>
+    </g>
+    <rect
+       x="1362.6"
+       y="539.09998"
+       width="288"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect954" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1366-543-281-24-0)"
+       font-size="10.8px"
+       id="g958">
+      <text
+         x="1367.5"
+         y="554.79999"
+         id="text956">+ discard(cards: Vec&lt;Card&gt;): Result&lt;T, E&gt;</text>
+    </g>
+    <rect
+       x="1362.6"
+       y="562.5"
+       width="288"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect960" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1366-567-281-24-0)"
+       font-size="10.8px"
+       id="g964">
+      <text
+         x="1367.5"
+         y="578.20001"
+         id="text962">+ exile(cards: Vec&lt;Card&gt;): Result&lt;T, E&gt;</text>
+    </g>
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1366-590-281-24-0)"
+       font-size="10.8px"
+       id="g968">
+      <text
+         x="1367.5"
+         y="601.59998"
+         id="text966">+ update_card_positions(): Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="M 914.85,711.45 H 868.8 v 55.35 h -39.01"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path970" />
+    <path
+       d="m 814.49,766.8 7.65,-4.5 7.65,4.5 -7.65,4.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path972" />
+    <path
+       d="m 914.85,719.1 v -36 h 447.75 v 36"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path974" />
+    <path
+       d="m 914.85,719.1 v 77.4 h 447.75 v -77.4"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path976" />
+    <path
+       d="M 914.85,719.1 H 1362.6"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path978" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g984">
+      <text
+         x="1138.22"
+         y="698.79999"
+         id="text980">&lt;&lt;struct&gt;&gt;</text>
+      <text
+         x="1138.22"
+         y="711.40002"
+         id="text982">CardPosition</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="719.09998"
+       width="447.75"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect986" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-723-441-24-0)"
+       font-size="10.8px"
+       id="g990">
+      <text
+         x="919.75"
+         y="734.79999"
+         id="text988">+ position_type: PositionType</text>
+    </g>
+    <rect
+       x="914.84998"
+       y="742.5"
+       width="447.75"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect992" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-747-441-24-0)"
+       font-size="10.8px"
+       id="g996">
+      <text
+         x="919.75"
+         y="758.20001"
+         id="text994">+ coords: (isize, isize)</text>
+    </g>
+    <path
+       d="M 914.85,769.5 H 1362.6"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path998" />
+    <rect
+       x="914.84998"
+       y="773.09998"
+       width="447.75"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect1000" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-918-777-441-24-0)"
+       font-size="10.8px"
+       id="g1004">
+      <text
+         x="919.75"
+         y="788.79999"
+         id="text1002">+ change_position(new_position: PositionType, [coords: (isize, isize)]): Result&lt;T, E&gt;</text>
+    </g>
+    <path
+       d="m 1191.6,863.1 v -36 h 198 v -96.3 h -10.81"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path1006" />
+    <path
+       d="m 1363.49,730.8 7.65,-4.5 7.65,4.5 -7.65,4.5 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path1008" />
+    <path
+       d="m 1117.35,896.4 v -33.3 h 148.5 v 33.3"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path1010" />
+    <path
+       d="m 1117.35,896.4 v 117 h 148.5 v -117"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path1012" />
+    <path
+       d="m 1117.35,896.4 h 148.5"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path1014" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g1020">
+      <text
+         x="1191.1"
+         y="877.45001"
+         id="text1016">&lt;&lt;enum&gt;&gt;</text>
+      <text
+         x="1191.1"
+         y="890.04999"
+         id="text1018">PositionType</text>
+    </g>
+    <rect
+       x="1117.35"
+       y="896.40002"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect1022" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1121-901-142-24-0)"
+       font-size="10.8px"
+       id="g1026">
+      <text
+         x="1122.25"
+         y="912.09998"
+         id="text1024">Deck</text>
+    </g>
+    <rect
+       x="1117.35"
+       y="919.79999"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect1028" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1121-924-142-24-0)"
+       font-size="10.8px"
+       id="g1032">
+      <text
+         x="1122.25"
+         y="935.5"
+         id="text1030">Hand</text>
+    </g>
+    <rect
+       x="1117.35"
+       y="943.20001"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect1034" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1121-948-142-24-0)"
+       font-size="10.8px"
+       id="g1038">
+      <text
+         x="1122.25"
+         y="958.90002"
+         id="text1036">Board</text>
+    </g>
+    <rect
+       x="1117.35"
+       y="966.59998"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect1040" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1121-971-142-24-0)"
+       font-size="10.8px"
+       id="g1044">
+      <text
+         x="1122.25"
+         y="982.29999"
+         id="text1042">Stack</text>
+    </g>
+    <rect
+       x="1117.35"
+       y="990"
+       width="148.5"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect1046" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1121-994-142-24-0)"
+       font-size="10.8px"
+       id="g1050">
+      <text
+         x="1122.25"
+         y="1005.7"
+         id="text1048">Exile</text>
+    </g>
+    <path
+       d="m 1218.6,206.1 v -36 h 288 v 36"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path1052" />
+    <path
+       d="m 1218.6,206.1 v 100.8 h 288 V 206.1"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path1054" />
+    <path
+       d="m 1218.6,206.1 h 288"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path1056" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       font-weight="bold"
+       pointer-events="none"
+       text-anchor="middle"
+       font-size="10.8px"
+       id="g1062">
+      <text
+         x="1362.1"
+         y="185.8"
+         id="text1058">&lt;&lt;trait&gt;&gt;</text>
+      <text
+         x="1362.1"
+         y="198.39999"
+         id="text1060">CanDiscard</text>
+    </g>
+    <path
+       d="m 1218.6,209.7 h 288"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="none"
+       id="path1064" />
+    <rect
+       x="1218.6"
+       y="213.3"
+       width="288"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect1066" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1222-218-281-24-0)"
+       font-size="10.8px"
+       id="g1070">
+      <text
+         x="1223.5"
+         y="229"
+         id="text1068">+ discard(cards: Vec&lt;Card&gt;): Result&lt;T, E&gt;</text>
+    </g>
+    <rect
+       x="1218.6"
+       y="236.7"
+       width="288"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect1072" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1222-241-281-24-0)"
+       font-size="10.8px"
+       id="g1076">
+      <text
+         x="1223.5"
+         y="252.39999"
+         id="text1074">+ discard().all(): Result&lt;T, E&gt;</text>
+    </g>
+    <rect
+       x="1218.6"
+       y="260.10001"
+       width="288"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect1078" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1222-264-281-24-0)"
+       font-size="10.8px"
+       id="g1082">
+      <text
+         x="1223.5"
+         y="275.79999"
+         id="text1080">+ discard(cards: Vec&lt;Card&gt;).shuffle(bool): Result&lt;T, E&gt;</text>
+    </g>
+    <rect
+       x="1218.6"
+       y="283.5"
+       width="288"
+       height="23.4"
+       fill="#ffffff"
+       stroke="none"
+       pointer-events="none"
+       id="rect1084" />
+    <g
+       fill="#000000"
+       font-family="Helvetica"
+       pointer-events="none"
+       clip-path="url(#mx-clip-1222-288-281-24-0)"
+       font-size="10.8px"
+       id="g1088">
+      <text
+         x="1223.5"
+         y="299.20001"
+         id="text1086">+ discard().shuffle(bool).all(): Result&lt;T, E&gt;</text>
+    </g>
+  </g>
+  <switch
+     id="switch1098"
+     transform="translate(-14,-6)">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g1092" />
+    <a
+       transform="translate(0,-5)"
+       xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems"
+       target="_blank"
+       id="a1096">
+      <text
+         text-anchor="middle"
+         font-size="10px"
+         x="50%"
+         y="100%"
+         id="text1094">Viewer does not support full SVG 1.1</text>
+    </a>
+  </switch>
+</svg>
