@@ -12,6 +12,6 @@ The structure of the program can be visualised in diagrams and flowcharts.
 
 ![](./architecture/architecture_0.1.0.png)
 
-### Class structure
+### UML diagram
 
 ![](./architecture/structure_0.2.2.svg)
