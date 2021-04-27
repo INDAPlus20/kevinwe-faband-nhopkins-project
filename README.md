@@ -14,4 +14,4 @@ The structure of the program can be visualised in diagrams and flowcharts.
 
 ### UML diagram
 
-![](./docs/structure_0.2.2.svg)
+![](./docs/structure_1.1.0.svg)
