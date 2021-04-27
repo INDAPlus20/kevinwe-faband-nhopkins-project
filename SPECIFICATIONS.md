@@ -14,8 +14,6 @@
     * Rust Style Guide: https://github.com/rust-dev-tools/fmt-rfcs/blob/master/guide/guide.md 
 * Git flow schema
     ![](./architecture/git_branch_flow_0.1.4.png) 
-* UML diagram
-![](./architecture/structure_0.2.2.svg)
 
 ## Features
 
@@ -80,3 +78,6 @@ It seems reasonable, but maybe a bit bare. More features can always be added.
 Having a compiling program and working backend is necessary since everything relies on it.
 
 Some funcitons, like hand and card piles will also be necessary for other functions necessary for play.
+
+## UML diagram
+![](./architecture/structure_0.2.2.svg)
