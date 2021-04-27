@@ -14,4 +14,4 @@ The structure of the program can be visualised in diagrams and flowcharts.
 
 ### Class structure
 
-![](./architecture/structure_0.1.0.png)
+![](./architecture/structure_0.2.2.svg)
