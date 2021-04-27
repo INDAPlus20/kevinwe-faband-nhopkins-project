@@ -10,8 +10,8 @@ The structure of the program can be visualised in diagrams and flowcharts.
 
 ### Architecture
 
-![](./architecture/architecture_0.1.0.png)
+![](./docs/architecture_0.1.0.png)
 
 ### UML diagram
 
-![](./architecture/structure_0.2.2.svg)
+![](./docs/structure_0.2.2.svg)
