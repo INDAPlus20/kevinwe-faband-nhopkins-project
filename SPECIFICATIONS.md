@@ -12,8 +12,10 @@
     * Rustdoc: https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html 
 * Style Guide
     * Rust Style Guide: https://github.com/rust-dev-tools/fmt-rfcs/blob/master/guide/guide.md 
-* Git flow:
+* Git flow schema
     ![](./architecture/git_branch_flow_0.1.4.png) 
+* UML diagram
+![](./architecture/structure_0.2.2.svg)
 
 ## Features
 
