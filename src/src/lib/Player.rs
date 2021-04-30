@@ -53,21 +53,8 @@ impl Game {
  * main
  */
 
-/// main holds logic for
-/// settings and game setup as well as
-/// the main game loop, where all objects are instantiated.
+/// main method for testing
 fn main() {
-
-    let game = Game {
-        current_player: (),
-        in_play: (),
-    };
-
-    // main game loop
-    loop {
-        // do stuff with Game
-        break;
-    }
-
+    
     println!("Hello, world!");
 }
