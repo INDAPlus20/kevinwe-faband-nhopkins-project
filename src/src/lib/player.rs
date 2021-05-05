@@ -60,8 +60,8 @@ impl Player {
     /// basically a giant match statement
     fn use_special(target: Option<&Target>) -> Result<T, E> {
         match ability {
-            Damage => target.modifyField("health", -1)
-            Healing => target.modifyField("health", 1)
+            Damage => target.modifyField("health", -1),
+            Healing => target.modifyField("health", 1),
         }
     }
 }
