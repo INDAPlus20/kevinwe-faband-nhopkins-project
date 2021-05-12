@@ -1,3 +1,8 @@
+enum Effect{
+    Damage,
+    ModStrength,
+}
+
 pub trait Target {
-    fn modify_field(&self, String, isize) -> Result<T, E>;
+    fn apply_effect(&self, Effect, isize) -> Result<T, E>;
 }
