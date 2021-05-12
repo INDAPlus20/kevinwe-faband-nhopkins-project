@@ -1,12 +1,9 @@
 mod traits.rs
 
-/// card type
+/// card types
 enum CType{
     Event,
     Person,
-}
-/// card subtype, should include school
-enum Subtype{
     Professor,
     Phoes,
     EECS,
@@ -15,6 +12,7 @@ enum Subtype{
     SCI,
     CCH,
 }
+
 /// holds all relevant data for a card
 pub struct Card{
     position: CardPosition,
@@ -23,8 +21,7 @@ pub struct Card{
     mana: isize,
     strength: isize,
     health: isize,
-    ctype: CType,
-    sub_type: Vec<Subtype>,
+    ctype: Vec<CType>,
     effects: Vec<(Effect, isize)>,
     text: String,
 }
@@ -32,7 +29,7 @@ pub struct Card{
 impl Card {
     /// creates a new card, should use a helper function to not need to type as much.
     fn new(position: CardPosition, owner: *Player, strength: isize, health: isize,
-        ctype: CType, subtype: Vec<Subtype>, effects: Vec<(Effect, isize)>, text: String) -> Card
+        ctype: Vec<CType>, effects: Vec<(Effect, isize)>, text: String) -> Card
     {
             let card = Card{
                 position: position,
@@ -42,7 +39,6 @@ impl Card {
                 strength: strength,
                 health: health,
                 ctype: ctype,
-                sub_type: subtype,
                 effects: effects,
                 text: text,
             };
