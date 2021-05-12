@@ -1,23 +1,21 @@
 mod traits.rs
 
-enum School{
+/// card type
+enum CType{
+    Event,
+    Person,
+}
+/// card subtype, should include school
+enum Subtype{
+    Professor,
+    Phoes,
     EECS,
     ABE,
     ITM,
     SCI,
     CCH,
 }
-
-enum CType{
-    Event,
-    Person,
-}
-
-enum Subtype{
-    Professor,
-    Phoes,
-}
-
+/// holds all relevant data for a card
 pub struct Card{
     position: CardPosition,
     owner: *Player,
@@ -25,7 +23,6 @@ pub struct Card{
     mana: isize,
     strength: isize,
     health: isize,
-    school: School,
     ctype: CType,
     sub_type: Vec<Subtype>,
     effects: Vec<(Effect, isize)>,
@@ -33,7 +30,8 @@ pub struct Card{
 }
 
 impl Card {
-    fn new(position: CardPosition, owner: *Player, strength: isize, health: isize, school: School,
+    /// creates a new card, should use a helper function to not need to type as much.
+    fn new(position: CardPosition, owner: *Player, strength: isize, health: isize,
         ctype: CType, subtype: Vec<Subtype>, effects: Vec<(Effect, isize)>, text: String) -> Card
     {
             let card = Card{
@@ -43,7 +41,6 @@ impl Card {
                 mana: 0,
                 strength: strength,
                 health: health,
-                school: school,
                 ctype: ctype,
                 sub_type: subtype,
                 effects: effects,
@@ -51,14 +48,20 @@ impl Card {
             }
             return card
     }
-
+    /// given a target, applies its effects to that target
     fn use(&self, target: &impl Target)
     {
         for eff in self.effects {target.apply_effect(eff.0, eff.1)};
+        self.used = true;
+    }
+    /// Sets used to false, should be called at start of turn
+    fn refresh(&self){
+
     }
 }
 
 impl Target for Card{
+    /// applies an instance of an effect with a scalar value to self
     fn apply_effect(&self, effect: Effect, value: isize){
         match effect {
             Effect::Damage => {
