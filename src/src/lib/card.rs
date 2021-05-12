@@ -45,7 +45,7 @@ impl Card {
                 sub_type: subtype,
                 effects: effects,
                 text: text,
-            }
+            };
             return card
     }
     /// given a target, applies its effects to that target
@@ -56,7 +56,7 @@ impl Card {
     }
     /// Sets used to false, should be called at start of turn
     fn refresh(&self){
-
+        self.used = false;
     }
 }
 
