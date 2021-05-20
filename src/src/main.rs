@@ -54,8 +54,8 @@ const SCREEN_SIZE: (f32, f32) = (
 /// Layout of the board that the entire game plays by. This holds the logic for where cards are
 /// stored and it is necessary for generation of graphics.
 struct Board {
-    field: [[Option<i8 /*Card*/>; AMOUNT_OF_CELLS as usize]; AMOUNT_OF_CELLS as usize],
-    //cards: Vec<Card>,
+    field: [[Option<Card>; AMOUNT_OF_CELLS as usize]; AMOUNT_OF_CELLS as usize],
+    cards: Vec<Card>,
 }
 
 impl Board {
@@ -67,7 +67,7 @@ impl Board {
 }
 
 /// GUI Structure and logic implementation
-struct AppState {
+struct Game {
     /// Image of the cards and relevant knowledge for
     /// how it should handle inputs
     sprites: Vec<(Card, graphics::Image)>,
@@ -79,9 +79,9 @@ struct AppState {
 }
 
 /// Implementation of basic functions of the frontend program
-impl AppState {
-    pub fn new(ctx: &mut Context) -> GameResult<AppState> {
-        let state = AppState {
+impl Game {
+    pub fn new(ctx: &mut Context) -> GameResult<Game> {
+        let state = Game {
             board: Board::new(),
         };
         let player1 = Game::new_player();
@@ -111,7 +111,7 @@ impl AppState {
 }
 
 /// Implementeation of the eventloop in the frontend
-impl event::EventHandler for AppState {
+impl event::EventHandler for Game {
     /// Updating function for game logic, which currently is not handeled by the frontend
     fn update(&mut self, _ctx: &mut Context) -> GameResult {
         Ok(())
@@ -183,7 +183,7 @@ fn main() -> GameResult {
     // Builds context
     let (mut context, event_loop) = context_builder.build()?;
     // Initiates game
-    let state = AppState::new(&mut context)?;
+    let state = Game::new(&mut context)?;
     // Run application window
     run(context, event_loop, state);
     Ok(())

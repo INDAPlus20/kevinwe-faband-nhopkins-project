@@ -32,18 +32,6 @@ pub struct Player {
     /// The special ability or trait of the player
     special_ability: Vec<(String, int)>,
 }
-
-// methods of Player are implemented here
-impl Game {
-    /// play plays a card in the player's hand, optionally supply targets
-    ///
-    /// card : the
-    /// card_targets is either a Card, Player, or ... which inherits the Target trait
-    fn play(card: Option<Card>, card_targets: Option<&Target>) -> Result<T, E> {
-        // pass
-    }
-}
-
 /**
  * main
  */
