@@ -1,4 +1,5 @@
-mod traits.rs
+mod traits;
+mod Player;
 
 /// card types
 enum CType{
