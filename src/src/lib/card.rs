@@ -1,4 +1,4 @@
-mod traits.rs
+mod traits
 
 /// card types
 enum CType{
@@ -14,6 +14,7 @@ enum CType{
 }
 
 /// holds all relevant data for a card
+#[derive(Copy, Clone)]
 pub struct Card{
     position: CardPosition,
     owner: *Player,
