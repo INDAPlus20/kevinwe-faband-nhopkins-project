@@ -52,7 +52,7 @@ impl Player {
             }
             // sacrifice the card to add mana to target
             else {
-                target.contained.unwrap.mana += 1;
+                target.contained.unwrap().mana += 1;
             }        
         }
         else {
