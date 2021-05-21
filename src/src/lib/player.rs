@@ -5,12 +5,10 @@
 use crate::card::CType::*;
 use crate::card::{CType, Card};
 use crate::traits::{Effect, Target};
+use crate::board::Board;
 /**
  * Imports
  */
-use crate::CardPosition;
-//mod card;
-//mod pile;
 // Import crates
 // use std::io::{self, Read, Write};
 // ...
@@ -27,7 +25,7 @@ extern "C" {
 ///
 /// Keeps track of player stats, hand, special ability as well as player related methods.
 pub struct Player {
-    /// The health points of the player; zero means the player is dead and out of the game
+    /// The health points of the player; zero or less means the player is dead and out of the game
     pub health: isize,
     /// The player's hand of cards
     pub hand: Vec<Card>,
@@ -39,36 +37,44 @@ pub struct Player {
 impl Player {
     /// play plays a card in the player's hand, optionally supply targets
     ///
-    /// card : the card
-    /// card_targets is either a Card, Player, or ... which inherits the Target trait
-    fn play(&self, cardindex: usize, target: Vec<CType>) {
+    /// cardindex : the index of the card to be played from the hand 
+    /// 
+    /// target_index : the index of the position on the board where the card
+    /// is to be played
+    fn play(&self, cardindex: usize, mut board: Board, target_index: (usize, usize)) -> Result<(usize, usize), &'static str> {
         //put card in new position, or affect targets
         // This needs to be fixed, commenting it out for now
-        /*
-        if self.hand[cardindex].ctype.contains(Person){
-            if target.contains.is_none(){
-                //puts the card in the hole
-                target.containes = Some(self.hand(cardindex));
-            }
-            // sacrifice the card to add mana to target
-            else {
-                target.containes.unwrap().mana += 1;
-            }
-        }
-        else {
-            if target.containes.is_none(){
-                //this shouldn't work
-                println!("Bruh you can't play that without a target");
-            }
-            else {
-                for effect in self.hand(cardindex).effects{
-                    target.apply_effect(effect.0, effect.1);
+        
+        match self.hand[cardindex].ctype.0 {
+            Person => {
+                if board.field[target_index.0][target_index.1].is_none(){
+                    //puts the card in the hole
+                    board.field[target_index.0][target_index.1] = Some(self.hand[cardindex]);
                 }
+                // sacrifice the card to add mana to target
+                else {
+                    board.field[target_index.0][target_index.1].unwrap().apply_effect(Effect::ModMana, 1);
+                }
+                return Ok(target_index)
+            }
+            Event => {
+                if board.field[target_index.0][target_index.1].is_none(){
+                    //this shouldn't work
+                    println!("Bruh you can't play that without a target");
+                }
+                // apply effect to card at position
+                else {
+                    board.field[target_index.0][target_index.1].unwrap().apply_effect(self.hand[cardindex].effects.0, self.hand[cardindex].effects.1);    
+                }
+                return Ok(target_index)
+            }
+            _ => {
+                return Err("This card doesn't have a primary type!");
             }
         }
         //remove card from hand
         self.hand.remove(cardindex);
-        */
+        
     }
     //draws a card from a given pile
     // Think this can be used in the main method instead

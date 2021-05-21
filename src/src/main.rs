@@ -13,6 +13,8 @@ mod card;
 mod player;
 #[path = "lib/traits.rs"]
 mod traits;
+#[path = "lib/board.rs"]
+mod board;
 // Local import structs
 use card::CType::*;
 use card::CardPosition::*;
@@ -20,6 +22,7 @@ use card::{CType, Card, CardPosition};
 use player::Player;
 use traits::Effect::*;
 use traits::PlayerType;
+use board::Board;
 
 // ggez
 use ggez::event;
@@ -52,22 +55,6 @@ const SCREEN_SIZE: (f32, f32) = (
     CELL_SIZE.0 * CELL_AMOUNT.0 as f32,
     CELL_SIZE.1 * CELL_AMOUNT.1 as f32,
 );
-
-/// ## Board
-/// Layout of the board that the entire game plays by. This holds the logic for where cards are
-/// stored and it is necessary for generation of graphics.
-struct Board {
-    field: [[Option<Card>; CELL_AMOUNT.0 as usize]; CELL_AMOUNT.1 as usize],
-    //cards: Vec<Card>,
-}
-
-impl Board {
-    pub fn new() -> Board {
-        Board {
-            field: [[None; CELL_AMOUNT.0 as usize]; CELL_AMOUNT.1 as usize],
-        }
-    }
-}
 
 /// GUI Structure and logic implementation
 struct Game {
@@ -117,17 +104,20 @@ impl Game {
         // TODO: Implement graphics and proper loading function7
         let mut sprites: Vec<(Card, String)> = Vec::new();
         // Temporary values for cards
-        sprites.push((
-            Card::new(
-                Deck,
-                10,
-                10,
-                (Person, EECS),
-                (Damage, 10),
-                //"Tänk om SM slutade it tid...".to_string(),
-            ),
-            "/ccg-test-1.png".to_string(),
-        ));
+        // make lots of them so you can use the deck properly
+        for i in 0..30{
+            sprites.push((
+                Card::new(
+                    Deck,
+                    10,
+                    10,
+                    (Person, EECS),
+                    (Damage, 10),
+                    //"Tänk om SM slutade it tid...".to_string(),
+                ),
+                "/ccg-test-1.png".to_string(),
+            ));
+        }
         return sprites;
     } /*
       // TODO: Implement Target trait for respective functions

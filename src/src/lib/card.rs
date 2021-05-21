@@ -38,7 +38,7 @@ pub struct Card {
     // Until we grow smart, only 2 types ;_;
     pub ctype: (CType, CType),
     // For now, we are limited to one effect ;_;
-    effects: (Effect, isize),
+    pub effects: (Effect, isize),
     // For now, I am not sure about text please god help
     //text: String,
 }
@@ -67,7 +67,7 @@ impl Card {
         }
     }
     /// given a target, applies its effects to that target
-    fn play(&mut self, target: &mut impl Target) {
+    fn attack(&mut self, target: &mut impl Target) {
         // removed for loop here to make things function
         target.apply_effect(self.effects.0, self.effects.1);
         self.used = true;
@@ -88,6 +88,10 @@ impl Target for Card {
             }
             Effect::ModStrength => {
                 self.strength += value;
+                return Ok(value);
+            }
+            Effect::ModMana => {
+                self.mana += value;
                 return Ok(value);
             }
             _ => return Err("The effect isn't implemented yet for this target type!"),
