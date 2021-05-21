@@ -1,11 +1,11 @@
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 pub enum Effect {
     Damage,
     ModStrength,
     ModMana,
 }
 // Consider moving this elsewhere, and renaming
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 pub enum PlayerType {
     One,
     Two,

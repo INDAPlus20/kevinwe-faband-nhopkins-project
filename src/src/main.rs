@@ -17,8 +17,7 @@ mod traits;
 mod board;
 // Local import structs
 use card::CType::*;
-use card::CardPosition::*;
-use card::{CType, Card, CardPosition};
+use card::{CType, Card};
 use player::Player;
 use traits::Effect::*;
 use traits::PlayerType;
@@ -90,11 +89,13 @@ impl Game {
                 health: 100,
                 hand: Vec::<Card>::new(),
                 special_ability: (ModStrength, 0),
+                used: false,
             },
             player_two: Player {
                 health: 100,
                 hand: Vec::<Card>::new(),
                 special_ability: (ModStrength, 0),
+                used: false,
             },
             current_player: PlayerType::One,
             board: Board::new(),
@@ -108,7 +109,6 @@ impl Game {
         for i in 0..30{
             sprites.push((
                 Card::new(
-                    Deck,
                     10,
                     10,
                     (Person, EECS),
