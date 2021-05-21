@@ -23,6 +23,13 @@ use player::Player;
 use traits::Effect::*;
 use traits::PlayerType;
 
+// Import foreign function interfaces (FFI)
+extern "C" {
+    fn rand() -> usize;
+}
+fn rand_int(max_size: u32) -> usize {
+    unsafe { rand() % max_size as usize }
+}
 // ggez
 use ggez::event;
 use ggez::event::{run, EventHandler, KeyCode, KeyMods, MouseButton};
@@ -120,22 +127,53 @@ impl Game {
         // Temporary values for cards
         // make lots of them so you can use the deck properly
         for i in 0..30 {
-            sprites.push((
-                Card::new(
-                    10,
-                    10,
-                    (Person, EECS),
-                    (Damage, 10),
-                    //"Tänk om SM slutade it tid...".to_string(),
-                ),
-                "/ccg-crab-1.png".to_string(),
-            ));
+            //let h = rand_int(3);
+            match i % 4 {
+                0 => sprites.push((
+                    Card::new(
+                        10,
+                        10,
+                        (Person, EECS),
+                        (Damage, 10),
+                        //"Tänk om SM slutade it tid...".to_string(),
+                    ),
+                    "/ccg-01-bästa_assen_1.png".to_string(),
+                )),
+                1 => {
+                    sprites.push((
+                        Card::new(
+                            10,
+                            10,
+                            (Person, EECS),
+                            (Damage, 10),
+                            //"Tänk om SM slutade it tid...".to_string(),
+                        ),
+                        "/ccg-03-rustaceans.png".to_string(),
+                    ));
+                }
+                _ => sprites.push((
+                    Card::new(
+                        10,
+                        10,
+                        (Person, EECS),
+                        (Damage, 10),
+                        //"Tänk om SM slutade it tid...".to_string(),
+                    ),
+                    "/ccg-04-bokstavligen_jag.png".to_string(),
+                )),
+            }
         }
         return sprites;
     }
     /// Fills deck
     pub fn fill_deck(&mut self) {
-        self.deck = vec![self.sprites[0].0; 30];
+        self.deck = vec![
+            self.sprites[0].0,
+            self.sprites[1].0,
+            self.sprites[2].0,
+            self.sprites[3].0,
+            self.sprites[4].0,
+        ];
     }
     /// For presentation
     pub fn fill_board(&mut self) {
@@ -210,27 +248,52 @@ impl event::EventHandler for Game {
                 graphics::draw(ctx, &board, (ggez::mint::Point2 { x: 0.0, y: 0.0 },))?;
             }
         }
+
+        /*
+        "/ccg-01-bästa_assen_1.png".to_string(),
+                        "/ccg-03-rustaceans.png".to_string(),
+                    "/ccg-04-bokstavligen_jag.png".to_string(),
+        */
         // Drawing played cards
         for x in 0..CELL_AMOUNT.1 as usize {
             for y in 0..CELL_AMOUNT.0 as usize {
                 if let Some(card) = self.board.field[x][y] {
-                    let card_for_sprite = card;
-                    let sprite: graphics::Image = self
-                        .sprites
-                        .iter()
-                        .find(|&x| x.0.ctype == card_for_sprite.ctype)
-                        .unwrap()
-                        .1
-                        .clone();
+                    let sprites;
+                    match x % 3 {
+                        0 => {
+                            sprites =
+                                graphics::Image::new(ctx, "/ccg-01-bästa_assen_1.png".to_string())
+                                    .unwrap();
+                        }
+                        1 => {
+                            sprites =
+                                graphics::Image::new(ctx, "/ccg-03-rustaceans.png".to_string())
+                                    .unwrap();
+                        }
+                        _ => {
+                            sprites = graphics::Image::new(
+                                ctx,
+                                "/ccg-04-bokstavligen_jag.png".to_string(),
+                            )
+                            .unwrap();
+                        }
+                    };
+                    /*                    let sprite: graphics::Image = self
+                    .sprites
+                    .iter()
+                    .find(|&x| x.0.ctype == card_for_sprite.ctype)
+                    .unwrap()
+                    .1
+                    .clone();*/
                     // This works somehow, lets not poke at it
                     //.map(|x| if x.0.ctype == card_for_sprite.ctype )
                     graphics::draw(
                         ctx,
-                        &sprite,
+                        &sprites,
                         DrawParam::default()
                             .scale(ggez::mint::Point2 {
-                                x: CELL_SIZE.1 as f32 / sprite.width() as f32,
-                                y: CELL_SIZE.0 as f32 / sprite.height() as f32,
+                                x: CELL_SIZE.1 as f32 / sprites.width() as f32,
+                                y: CELL_SIZE.0 as f32 / sprites.height() as f32,
                             })
                             .dest(ggez::mint::Point2 {
                                 x: (CELL_SIZE.1 as f32) * x as f32,

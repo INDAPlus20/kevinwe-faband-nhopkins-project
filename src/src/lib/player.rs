@@ -98,8 +98,13 @@ impl Player {
     }
 
     fn ability(&self, mut board: Board, target_index: (usize, usize)) {
-        println!("Board at loc is {:?}", board.field[target_index.0][target_index.1]);
-        board.field[target_index.0][target_index.1].unwrap().apply_effect(self.special_ability.0, self.special_ability.1);
+        println!(
+            "Board at loc is {:?}",
+            board.field[target_index.0][target_index.1]
+        );
+        board.field[target_index.0][target_index.1]
+            .unwrap()
+            .apply_effect(self.special_ability.0, self.special_ability.1);
         println!("ability has run")
         //self.used = true; this would need to be set when this function is called
     }
@@ -120,13 +125,13 @@ impl Target for Player {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::board::Board;
     use crate::card::CType::*;
     use crate::card::{CType, Card};
     use crate::traits::{Effect, Target};
-    use crate::board::Board;
 
     #[test]
-    fn player_takes_damage(){
+    fn player_takes_damage() {
         let mut player = Player {
             health: 100,
             hand: Vec::<Card>::new(),
@@ -139,7 +144,7 @@ mod tests {
     #[test]
     #[should_panic]
     //This test name is a lie
-    fn special_ability_works(){
+    fn special_ability_works() {
         let mut player = Player {
             health: 100,
             hand: Vec::<Card>::new(),
