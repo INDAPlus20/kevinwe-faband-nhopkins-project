@@ -38,7 +38,7 @@ pub struct Card {
     // Until we grow smart, only 2 types ;_;
     pub ctype: (CType, CType),
     // For now, we are limited to one effect ;_;
-    effects: (Effect, isize),
+    pub effects: (Effect, isize),
     // For now, I am not sure about text please god help
     //text: String,
 }
