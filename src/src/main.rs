@@ -13,6 +13,8 @@ mod card;
 mod player;
 #[path = "lib/traits.rs"]
 mod traits;
+#[path = "lib/board.rs"]
+mod board;
 // Local import structs
 use card::CType::*;
 use card::CardPosition::*;
