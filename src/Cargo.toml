@@ -2,7 +2,7 @@
 name = "src"
 version = "0.1.1"
 authors = [
-  "NAIBAFFF <fab.andreasson@gmail.com>", 
+  "Fabian Andréasson <fab.andreasson@gmail.com>", 
   "lucubrator <nhopkins@kth.se>",
   "Kevin Wenström <azraneth@gmail.com>"
 ]
@@ -11,6 +11,7 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 # Note that the version of ggez is the only one we could make compile, which is directly taken from
-# their GitHub. This means that documentation is outdated.
+# their GitHub. This means that documentation is outdated. This also means that this entire project
+# is at the mercy of the people updating their repo.
 [dependencies]
 ggez = {git = "https://github.com/ggez/ggez"}

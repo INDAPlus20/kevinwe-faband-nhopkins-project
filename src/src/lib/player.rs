@@ -5,9 +5,9 @@
 /**
  * Imports
  */
-mod card
-mod traits
-mod pile
+use crate::traits::{Target, Effect};
+//mod card;
+//mod pile;
 // Import crates
 // use std::io::{self, Read, Write};
 // ...
@@ -16,8 +16,6 @@ mod pile
 extern "C" {
     fn rand() -> usize;
 }
-
-
 /**
  * Structs
  */
@@ -25,6 +23,7 @@ extern "C" {
 /// Player represents a player in the game
 ///
 /// Keeps track of player stats, hand, special ability as well as player related methods.
+#[derive(Clone, Copy, Debug)]
 pub struct Player {
     /// The health points of the player; zero means the player is dead and out of the game
     health: isize,
@@ -38,7 +37,6 @@ pub struct Player {
 
 // methods of Player are implemented here
 impl Player {
-
     /// play plays a card in the player's hand, optionally supply targets
     ///
     /// card : the card
@@ -74,9 +72,8 @@ impl Player {
         self.hand.push(pile.pop());
     }
 
-    fn use(&self, target: &impl Target)
-    {
-        target.apply_effect(self.special_ability.0, self.special_ability.1)};
+    fn use(&self, target: &impl Target){
+        target.apply_effect(self.special_ability.0, self.special_ability.1);
         self.used = true;
     }
 
@@ -84,13 +81,11 @@ impl Player {
 impl Target for Player {
     fn apply_effect(&self, effect: Effect, value: isize){
         match effect {
-            Effect::Damage => {
-                self.health -= value;
-            };
-            _ => {println!("NYI!")};
+            Effect::Damage => self.health -= value,
+            _ => Err("NYI!"),
         }
+    }
 }
-
 
 /**
  * tests

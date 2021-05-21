@@ -4,9 +4,8 @@
  * Last updated: 2021-05-20
  */
 // std
-use std::io;
-use std::path;
-/*
+use std::{io, path};
+
 // Local imports from lib ´backend´ folder
 #[path = "lib/card.rs"]
 mod card;
@@ -16,7 +15,8 @@ mod player;
 mod traits;
 // Local import structs
 use card::Card;
-*/
+use player::Player;
+use traits::{ActivePlayer, Effect};
 
 // ggez
 use ggez::event;
@@ -54,7 +54,7 @@ const SCREEN_SIZE: (f32, f32) = (
 /// Layout of the board that the entire game plays by. This holds the logic for where cards are
 /// stored and it is necessary for generation of graphics.
 struct Board {
-    field: [[Option<i8 /*Card*/>; CELL_AMOUNT.0 as usize]; CELL_AMOUNT.1 as usize],
+    field: [[Option<Card>; CELL_AMOUNT.0 as usize]; CELL_AMOUNT.1 as usize],
     //cards: Vec<Card>,
 }
 
@@ -70,9 +70,13 @@ impl Board {
 struct Game {
     /// Image of the cards and relevant knowledge for
     /// how it should handle inputs
-    /*sprites: Vec<(Card, graphics::Image)>,
-    current_player: player::Player,
-    focused_player: player::Player,*/
+    sprites: Vec<(Card, graphics::Image)>,
+    player_one: player::Player,
+    player_two: player::Player,
+    /// It is an option since logically there does not need to be an active player at all times.
+    /// For example; starting out a game, it might be undecided. This also makes it easier to
+    /// implement it as a pointer :P
+    current_player: ActivePlayer,
     /// Implementation of backend board
     // TODO: Implement it :P
     board: Board,
@@ -81,34 +85,34 @@ struct Game {
 /// Implementation of basic functions of the frontend program
 impl Game {
     pub fn new(ctx: &mut Context) -> GameResult<Game> {
-        let state = Game {
+        let player1 = Game::new_player();
+        let player2 = Game::new_player();
+        let sprites = Game::load_sprites();
+        Ok(Game {
+            sprites: sprites,
+            player_one: player1,
+            player_two: player2,
+            current_player: ActivePlayer::One,
             board: Board::new(),
-        };
-        /*let player1 = Game::new_player();
-        Game {
-            sprites: Game::load_images(),
-            current_player: player1,
-            focused_player: player1,
-            board: Board::new(),
-        };*/
-        Ok(state)
-    } /*
-      fn new_player() -> player::Player {
-          // TODO: Generate new player
-      }
-      fn load_sprites() -> Vec<(Card, graphics::Image)> {
-          // TODO: Implement graphics and proper loading function7
-          let mut sprites = Vec::new();
-          sprites.push((Card::new(), "/ccg-test-1.png".to_string()));
-      }*/
-    /* TODO: Implement Target trait for respective functions
+        })
+    }
+    fn new_player() -> Player {
+        // TODO: Generate new player
+    }
+    fn load_sprites() -> Vec<(Card, graphics::Image)> {
+        // TODO: Implement graphics and proper loading function7
+        let mut sprites: Vec<(Card, graphics::Image)> = Vec::new();
+        sprites.push((Card::new(), "/ccg-test-1.png".to_string()));
+        return sprites;
+    }
+    // TODO: Implement Target trait for respective functions
     /// play plays a card in the player's hand, optionally supply targets
     ///
     /// card : the
     /// card_targets is either a Card, Player, or ... which inherits the Target trait
     pub fn play(card: Option<Card>, card_targets: Option<&Target>) -> Result<T, E> {
         // pass
-    }*/
+    }
 }
 
 /// Implementeation of the eventloop in the frontend
@@ -200,6 +204,5 @@ fn main() -> GameResult {
     // Initiates game
     let state = Game::new(&mut context)?;
     // Run application window
-    run(context, event_loop, state);
-    Ok(())
+    run(context, event_loop, state)
 }
