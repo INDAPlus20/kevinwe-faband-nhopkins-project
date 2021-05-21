@@ -117,17 +117,20 @@ impl Game {
         // TODO: Implement graphics and proper loading function7
         let mut sprites: Vec<(Card, String)> = Vec::new();
         // Temporary values for cards
-        sprites.push((
-            Card::new(
-                Deck,
-                10,
-                10,
-                (Person, EECS),
-                (Damage, 10),
-                //"Tänk om SM slutade it tid...".to_string(),
-            ),
-            "/ccg-test-1.png".to_string(),
-        ));
+        // make lots of them so you can use the deck properly
+        for i in 0..30{
+            sprites.push((
+                Card::new(
+                    Deck,
+                    10,
+                    10,
+                    (Person, EECS),
+                    (Damage, 10),
+                    //"Tänk om SM slutade it tid...".to_string(),
+                ),
+                "/ccg-test-1.png".to_string(),
+            ));
+        }
         return sprites;
     } /*
       // TODO: Implement Target trait for respective functions
