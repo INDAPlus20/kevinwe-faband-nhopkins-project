@@ -4,16 +4,8 @@
 use crate::player::Player;
 use crate::traits::{Effect, PlayerType, Target};
 
-/// Card positions
-#[derive(Clone, Copy)]
-pub enum CardPosition {
-    Hand,
-    Deck,
-    Board,
-}
-
 /// Card types
-#[derive(Clone, Copy, PartialEq)]
+#[derive(Clone, Copy, Debug, PartialEq)]
 pub enum CType {
     Event,
     Person,
@@ -27,13 +19,12 @@ pub enum CType {
 }
 
 /// holds all relevant data for a card
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, Debug)]
 pub struct Card {
-    position: CardPosition,
     owner: Option<PlayerType>,
     used: bool,
     mana: isize,
-    strength: isize,
+    pub strength: isize,
     health: isize,
     // Until we grow smart, only 2 types ;_;
     pub ctype: (CType, CType),
@@ -46,7 +37,6 @@ pub struct Card {
 impl Card {
     /// creates a new card, should use a helper function to not need to type as much.
     pub fn new(
-        position: CardPosition,
         //owner: PlayerType, Consider assigning this later
         strength: isize,
         health: isize,
@@ -55,7 +45,6 @@ impl Card {
         /*text: String,*/
     ) -> Card {
         Card {
-            position: position,
             owner: None,
             used: false,
             mana: 0,
@@ -96,5 +85,54 @@ impl Target for Card {
             }
             _ => return Err("The effect isn't implemented yet for this target type!"),
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::traits::{Effect};
+
+    #[test]
+    fn damage_changes_card_health(){
+        // init
+        let mut tester = Card::new(
+            10,
+            10,
+            (CType::Person, CType::EECS),
+            (Effect::Damage, 10),
+            //"Tänk om SM slutade it tid...".to_string(),
+        );
+        // do stuff
+        tester.apply_effect(tester.effects.0, tester.effects.1);
+        // assert
+        assert_eq!(tester.health, 0);
+    }
+    #[test]
+    fn mods_change_card_values(){
+        //init
+        let mut manatester = Card::new(
+            10,
+            10,
+            (CType::Person, CType::EECS),
+            (Effect::Damage, 10),
+            //"Tänk om SM slutade it tid...".to_string(),
+        );
+        let mut strengthtester = Card::new(
+            10,
+            10,
+            (CType::Person, CType::EECS),
+            (Effect::Damage, 10),
+            //"Tänk om SM slutade it tid...".to_string(),
+        );
+        // do stuff
+        manatester.apply_effect(Effect::ModMana, 1);
+        strengthtester.apply_effect(Effect::ModStrength, 1);
+
+        //assert
+        assert_eq!(manatester.mana, 1);
+        assert_eq!(strengthtester.strength, 11);
+        assert_ne!(manatester.strength, strengthtester.strength);
+        assert_ne!(manatester.mana, strengthtester.mana);
     }
 }

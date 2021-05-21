@@ -9,6 +9,7 @@ use ggez::graphics;
 /// stored and it is necessary for generation of graphics.
 const CELL_AMOUNT: (i32, i32) = (8, 20); //this is a very scuffed way to solve this issue, TODO: FIX
 
+#[derive(Copy, Clone)]
 pub struct Board {
     pub field: [[Option<Card>; CELL_AMOUNT.0 as usize]; CELL_AMOUNT.1 as usize],
     //cards: Vec<Card>,

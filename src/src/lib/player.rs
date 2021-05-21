@@ -32,6 +32,7 @@ pub struct Player {
     pub hand: Vec<Card>,
     /// The special ability or trait of the player
     pub special_ability: (Effect, isize),
+    pub used: bool,
 }
 
 // methods of Player are implemented here
@@ -55,6 +56,8 @@ impl Player {
                 if board.field[target_index.0][target_index.1].is_none() {
                     //puts the card in the hole
                     board.field[target_index.0][target_index.1] = Some(self.hand[cardindex]);
+                    println!("There should now be a card there");
+                    println!("{:?}", board.field[target_index.0][target_index.1])
                 }
                 // sacrifice the card to add mana to target
                 else {
@@ -93,15 +96,16 @@ impl Player {
     pub fn draw(&mut self, drawn_card: Card) {
         self.hand.push(drawn_card);
     }
-    // Commented out for now to make compiling version
-    /*
-    /// Changed name from use since it clashed with pre existing names
-    fn target_use(&self, target: &impl Target) {
-        target.apply_effect(self.special_ability.0, self.special_ability.1);
-        self.used = true;
-    }*/
+
+    fn ability(&self, mut board: Board, target_index: (usize, usize)) {
+        println!("Board at loc is {:?}", board.field[target_index.0][target_index.1]);
+        board.field[target_index.0][target_index.1].unwrap().apply_effect(self.special_ability.0, self.special_ability.1);
+        println!("ability has run")
+        //self.used = true; this would need to be set when this function is called
+    }
 }
 impl Target for Player {
+    ///apply_effect for player, only takes (Damage, value)
     fn apply_effect(&mut self, effect: Effect, value: isize) -> Result<isize, &'static str> {
         match effect {
             Effect::Damage => {
@@ -113,3 +117,45 @@ impl Target for Player {
     }
 }
 // Eventual tests
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::card::CType::*;
+    use crate::card::{CType, Card};
+    use crate::traits::{Effect, Target};
+    use crate::board::Board;
+
+    #[test]
+    fn player_takes_damage(){
+        let mut player = Player {
+            health: 100,
+            hand: Vec::<Card>::new(),
+            special_ability: (Effect::ModStrength, 0),
+            used: false,
+        };
+        player.apply_effect(Effect::Damage, 5);
+        assert_eq!(player.health, 95);
+    }
+    #[test]
+    #[should_panic]
+    //This test name is a lie
+    fn special_ability_works(){
+        let mut player = Player {
+            health: 100,
+            hand: Vec::<Card>::new(),
+            special_ability: (Effect::ModStrength, 5),
+            used: false,
+        };
+        let mut board = Board::new();
+        player.hand.push(Card::new(
+            10,
+            10,
+            (CType::Person, CType::EECS),
+            (Effect::Damage, 10),
+            //"Tänk om SM slutade it tid...".to_string(),
+        ));
+        player.play(0, board, (1, 1));
+        player.ability(board, (1, 1));
+        assert_eq!(board.field[1][1].unwrap().strength, 15);
+    }
+}
