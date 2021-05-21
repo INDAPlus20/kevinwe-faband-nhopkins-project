@@ -29,7 +29,7 @@ pub struct Player {
     /// The health points of the player; zero or less means the player is dead and out of the game
     pub health: isize,
     /// The player's hand of cards
-    pub hand: Vec<(Card)>,
+    pub hand: Vec<Card>,
     /// The special ability or trait of the player
     pub special_ability: (Effect, isize),
 }
@@ -89,10 +89,10 @@ impl Player {
     }
     //draws a card from a given pile
     // Think this can be used in the main method instead
-    /*
-    fn draw(&self, amount: isize, pile: Vec<Card>){
-        self.hand.push(pile.pop());
-    }*/
+
+    pub fn draw(&mut self, drawn_card: Card) {
+        self.hand.push(drawn_card);
+    }
     // Commented out for now to make compiling version
     /*
     /// Changed name from use since it clashed with pre existing names

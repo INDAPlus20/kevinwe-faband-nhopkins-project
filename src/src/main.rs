@@ -102,6 +102,11 @@ impl Game {
             board: Board::new(),
         })
     }
+    fn update(&mut self) {
+        for i in 0..self.player_one.hand.len() {
+            self.board.field[5 + i][6] = Some(self.player_one.hand[i]);
+        }
+    }
     fn load_sprites() -> Vec<(Card, String)> {
         // TODO: Implement graphics and proper loading function7
         let mut sprites: Vec<(Card, String)> = Vec::new();
@@ -122,8 +127,19 @@ impl Game {
         }
         return sprites;
     }
-    fn draw_card() {
-        //f
+    /// Fills deck
+    pub fn fill_deck(&mut self) {
+        self.deck = vec![self.sprites[0].0; 30];
+    }
+    /// For presentation
+    pub fn fill_board(&mut self) {
+        self.board.field =
+            [[Some(self.sprites[0].0); CELL_AMOUNT.0 as usize]; CELL_AMOUNT.1 as usize];
+    }
+    fn draw_card(&mut self) {
+        if self.deck.len() > 0 {
+            self.player_one.draw(self.deck.pop().unwrap());
+        }
     }
     /*
     // TODO: Implement Target trait for respective functions
@@ -140,13 +156,15 @@ impl Game {
 impl event::EventHandler for Game {
     /// Updating function for game logic, which currently is not handeled by the frontend
     fn update(&mut self, _ctx: &mut Context) -> GameResult {
+        // Destroying all purpose or result, lmfao
+        self.update();
         Ok(())
     }
     /// For drawing interface and graphical representation of the current state of the Game.
     fn draw(&mut self, ctx: &mut Context) -> GameResult {
         // Ordinary background color. TODO: Change or remove
         graphics::clear(ctx, [0.5, 0.5, 0.5, 1.0].into());
-
+        //self.fill_board();
         // Draw playing field
         for x in 0..CELL_AMOUNT.1 as usize {
             for y in 0..CELL_AMOUNT.0 as usize {
@@ -194,18 +212,19 @@ impl event::EventHandler for Game {
                         .unwrap()
                         .1
                         .clone();
+                    // This works somehow, lets not poke at it
                     //.map(|x| if x.0.ctype == card_for_sprite.ctype )
                     graphics::draw(
                         ctx,
                         &sprite,
                         DrawParam::default()
                             .scale(ggez::mint::Point2 {
-                                x: CELL_SIZE.0 as f32 / sprite.width() as f32,
-                                y: CELL_SIZE.1 as f32 / sprite.height() as f32,
+                                x: CELL_SIZE.1 as f32 / sprite.width() as f32,
+                                y: CELL_SIZE.0 as f32 / sprite.height() as f32,
                             })
                             .dest(ggez::mint::Point2 {
-                                x: (CELL_SIZE.0 as f32) * x as f32,
-                                y: (CELL_SIZE.1 as f32) * y as f32,
+                                x: (CELL_SIZE.1 as f32) * x as f32,
+                                y: (CELL_SIZE.0 as f32) * y as f32,
                             }),
                     )
                     .expect("Draw pls");
@@ -255,7 +274,10 @@ fn main() -> GameResult {
     // Builds context
     let (mut context, event_loop) = context_builder.build()?;
     // Initiates game
-    let state = Game::new(&mut context)?;
+    let mut state = Game::new(&mut context)?;
+    // TESTING
+    state.fill_deck();
+    state.draw_card();
     // Run application window
     run(context, event_loop, state)
 }
