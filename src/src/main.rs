@@ -7,22 +7,22 @@
 use std::{io, path};
 
 // Local imports from lib ´backend´ folder
+#[path = "lib/board.rs"]
+mod board;
 #[path = "lib/card.rs"]
 mod card;
 #[path = "lib/player.rs"]
 mod player;
 #[path = "lib/traits.rs"]
 mod traits;
-#[path = "lib/board.rs"]
-mod board;
 // Local import structs
+use board::Board;
 use card::CType::*;
 use card::CardPosition::*;
 use card::{CType, Card, CardPosition};
 use player::Player;
 use traits::Effect::*;
 use traits::PlayerType;
-use board::Board;
 
 // ggez
 use ggez::event;
@@ -60,7 +60,8 @@ const SCREEN_SIZE: (f32, f32) = (
 struct Game {
     /// Image of the cards and relevant knowledge for
     /// how it should handle inputs
-    deck: Vec<(Card, graphics::Image)>,
+    sprites: Vec<(Card, graphics::Image)>,
+    deck: Vec<Card>,
     player_one: player::Player,
     player_two: player::Player,
     /// It is an option since logically there does not need to be an active player at all times.
@@ -77,7 +78,7 @@ impl Game {
     pub fn new(ctx: &mut Context) -> GameResult<Game> {
         let sprites = Game::load_sprites();
         Ok(Game {
-            deck: sprites
+            sprites: sprites
                 .iter()
                 .map(|sprite| {
                     (
@@ -86,6 +87,7 @@ impl Game {
                     )
                 })
                 .collect::<Vec<(Card, graphics::Image)>>(),
+            deck: Vec::<Card>::new(),
             player_one: Player {
                 health: 100,
                 hand: Vec::<Card>::new(),
@@ -105,7 +107,7 @@ impl Game {
         let mut sprites: Vec<(Card, String)> = Vec::new();
         // Temporary values for cards
         // make lots of them so you can use the deck properly
-        for i in 0..30{
+        for i in 0..30 {
             sprites.push((
                 Card::new(
                     Deck,
@@ -115,19 +117,23 @@ impl Game {
                     (Damage, 10),
                     //"Tänk om SM slutade it tid...".to_string(),
                 ),
-                "/ccg-test-1.png".to_string(),
+                "/ccg-crab-1.png".to_string(),
             ));
         }
         return sprites;
-    } /*
-      // TODO: Implement Target trait for respective functions
-      /// play plays a card in the player's hand, optionally supply targets
-      ///
-      /// card : the
-      /// card_targets is either a Card, Player, or ... which inherits the Target trait
-      pub fn play(card: Option<Card>, card_targets: Option<&Target>) -> Result<T, E> {
-          // pass
-      }*/
+    }
+    fn draw_card() {
+        //f
+    }
+    /*
+    // TODO: Implement Target trait for respective functions
+    /// play plays a card in the player's hand, optionally supply targets
+    ///
+    /// card : the
+    /// card_targets is either a Card, Player, or ... which inherits the Target trait
+    pub fn play(card: Option<Card>, card_targets: Option<&Target>) -> Result<T, E> {
+        // pass
+    }*/
 }
 
 /// Implementeation of the eventloop in the frontend
@@ -175,6 +181,38 @@ impl event::EventHandler for Game {
                 graphics::draw(ctx, &board, (ggez::mint::Point2 { x: 0.0, y: 0.0 },))?;
             }
         }
+        // Drawing played cards
+        for x in 0..CELL_AMOUNT.1 as usize {
+            for y in 0..CELL_AMOUNT.0 as usize {
+                //y
+                if let Some(Card) = self.board.field[x][y] {
+                    let card_for_sprite = self.board.field[x][y].unwrap();
+                    let sprite: graphics::Image = self
+                        .sprites
+                        .iter()
+                        .find(|&x| x.0.ctype == card_for_sprite.ctype)
+                        .unwrap()
+                        .1
+                        .clone();
+                    //.map(|x| if x.0.ctype == card_for_sprite.ctype )
+                    graphics::draw(
+                        ctx,
+                        &sprite,
+                        DrawParam::default()
+                            .scale(ggez::mint::Point2 {
+                                x: CELL_SIZE.0 as f32 / sprite.width() as f32,
+                                y: CELL_SIZE.1 as f32 / sprite.height() as f32,
+                            })
+                            .dest(ggez::mint::Point2 {
+                                x: (CELL_SIZE.0 as f32) * x as f32,
+                                y: (CELL_SIZE.1 as f32) * y as f32,
+                            }),
+                    )
+                    .expect("Draw pls");
+                }
+            }
+        }
+
         // TODO: Implement graphics and locations of things
         // TODO: Draw more
         graphics::present(ctx)?;

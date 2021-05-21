@@ -13,7 +13,7 @@ pub enum CardPosition {
 }
 
 /// Card types
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, PartialEq)]
 pub enum CType {
     Event,
     Person,
