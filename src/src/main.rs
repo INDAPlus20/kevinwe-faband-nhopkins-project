@@ -278,7 +278,7 @@ impl event::EventHandler for Game {
                             .unwrap();
                         }
                     };
-                    /*                    let sprite: graphics::Image = self
+                    /*let sprite: graphics::Image = self
                     .sprites
                     .iter()
                     .find(|&x| x.0.ctype == card_for_sprite.ctype)
