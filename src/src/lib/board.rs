@@ -13,7 +13,7 @@ pub struct Board {
 
 impl Board {
     pub fn new() -> Board {
-        Board {
+        pub Board {
             field: [[None; CELL_AMOUNT.0 as usize]; CELL_AMOUNT.1 as usize],
         }
     }
