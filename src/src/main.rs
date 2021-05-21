@@ -7,21 +7,21 @@
 use std::{io, path};
 
 // Local imports from lib ´backend´ folder
+#[path = "lib/board.rs"]
+mod board;
 #[path = "lib/card.rs"]
 mod card;
 #[path = "lib/player.rs"]
 mod player;
 #[path = "lib/traits.rs"]
 mod traits;
-#[path = "lib/board.rs"]
-mod board;
 // Local import structs
+use board::Board;
 use card::CType::*;
 use card::{CType, Card};
 use player::Player;
 use traits::Effect::*;
 use traits::PlayerType;
-use board::Board;
 
 // ggez
 use ggez::event;
@@ -59,7 +59,8 @@ const SCREEN_SIZE: (f32, f32) = (
 struct Game {
     /// Image of the cards and relevant knowledge for
     /// how it should handle inputs
-    deck: Vec<(Card, graphics::Image)>,
+    sprites: Vec<(Card, graphics::Image)>,
+    deck: Vec<Card>,
     player_one: player::Player,
     player_two: player::Player,
     /// It is an option since logically there does not need to be an active player at all times.
@@ -69,6 +70,7 @@ struct Game {
     /// Implementation of backend board
     // TODO: Implement it :P
     board: Board,
+    selected_card: Option<(usize, usize)>,
 }
 
 /// Implementation of basic functions of the frontend program
@@ -76,7 +78,7 @@ impl Game {
     pub fn new(ctx: &mut Context) -> GameResult<Game> {
         let sprites = Game::load_sprites();
         Ok(Game {
-            deck: sprites
+            sprites: sprites
                 .iter()
                 .map(|sprite| {
                     (
@@ -85,6 +87,7 @@ impl Game {
                     )
                 })
                 .collect::<Vec<(Card, graphics::Image)>>(),
+            deck: Vec::<Card>::new(),
             player_one: Player {
                 health: 100,
                 hand: Vec::<Card>::new(),
@@ -99,14 +102,24 @@ impl Game {
             },
             current_player: PlayerType::One,
             board: Board::new(),
+            selected_card: None,
         })
+    }
+    fn update(&mut self) {
+        for i in 0..self.player_one.hand.len() {
+            self.board.field[5 + i][6] = Some(self.player_one.hand[i]);
+        }
+        if self.player_one.hand.len() == 0 {
+            println!("GG");
+            std::process::exit(0);
+        }
     }
     fn load_sprites() -> Vec<(Card, String)> {
         // TODO: Implement graphics and proper loading function7
         let mut sprites: Vec<(Card, String)> = Vec::new();
         // Temporary values for cards
         // make lots of them so you can use the deck properly
-        for i in 0..30{
+        for i in 0..30 {
             sprites.push((
                 Card::new(
                     10,
@@ -115,35 +128,57 @@ impl Game {
                     (Damage, 10),
                     //"Tänk om SM slutade it tid...".to_string(),
                 ),
-                "/ccg-test-1.png".to_string(),
+                "/ccg-crab-1.png".to_string(),
             ));
         }
         return sprites;
-    } /*
-      // TODO: Implement Target trait for respective functions
-      /// play plays a card in the player's hand, optionally supply targets
-      ///
-      /// card : the
-      /// card_targets is either a Card, Player, or ... which inherits the Target trait
-      pub fn play(card: Option<Card>, card_targets: Option<&Target>) -> Result<T, E> {
-          // pass
-      }*/
+    }
+    /// Fills deck
+    pub fn fill_deck(&mut self) {
+        self.deck = vec![self.sprites[0].0; 30];
+    }
+    /// For presentation
+    pub fn fill_board(&mut self) {
+        self.board.field =
+            [[Some(self.sprites[0].0); CELL_AMOUNT.0 as usize]; CELL_AMOUNT.1 as usize];
+    }
+    fn draw_card(&mut self) {
+        if self.deck.len() > 0 {
+            self.player_one.draw(self.deck.pop().unwrap());
+        }
+    }
+    /*
+    // TODO: Implement Target trait for respective functions
+    /// play plays a card in the player's hand, optionally supply targets
+    ///
+    /// card : the
+    /// card_targets is either a Card, Player, or ... which inherits the Target trait
+    pub fn play(card: Option<Card>, card_targets: Option<&Target>) -> Result<T, E> {
+        // pass
+    }*/
 }
 
 /// Implementeation of the eventloop in the frontend
 impl event::EventHandler for Game {
     /// Updating function for game logic, which currently is not handeled by the frontend
     fn update(&mut self, _ctx: &mut Context) -> GameResult {
+        // Calling for the backend to update the internal logic
+        self.update();
         Ok(())
     }
     /// For drawing interface and graphical representation of the current state of the Game.
     fn draw(&mut self, ctx: &mut Context) -> GameResult {
         // Ordinary background color. TODO: Change or remove
         graphics::clear(ctx, [0.5, 0.5, 0.5, 1.0].into());
-
+        //self.fill_board();
         // Draw playing field
         for x in 0..CELL_AMOUNT.1 as usize {
             for y in 0..CELL_AMOUNT.0 as usize {
+                /*let board = graphics::draw(
+                    ctx,
+                    &graphics::Image::new(ctx, "/ccg-tile-1.png".to_string()),
+                    DrawParam::default(),
+                );*/
                 let board = graphics::Mesh::new_rectangle(
                     ctx,
                     graphics::DrawMode::fill(),
@@ -175,6 +210,38 @@ impl event::EventHandler for Game {
                 graphics::draw(ctx, &board, (ggez::mint::Point2 { x: 0.0, y: 0.0 },))?;
             }
         }
+        // Drawing played cards
+        for x in 0..CELL_AMOUNT.1 as usize {
+            for y in 0..CELL_AMOUNT.0 as usize {
+                if let Some(card) = self.board.field[x][y] {
+                    let card_for_sprite = card;
+                    let sprite: graphics::Image = self
+                        .sprites
+                        .iter()
+                        .find(|&x| x.0.ctype == card_for_sprite.ctype)
+                        .unwrap()
+                        .1
+                        .clone();
+                    // This works somehow, lets not poke at it
+                    //.map(|x| if x.0.ctype == card_for_sprite.ctype )
+                    graphics::draw(
+                        ctx,
+                        &sprite,
+                        DrawParam::default()
+                            .scale(ggez::mint::Point2 {
+                                x: CELL_SIZE.1 as f32 / sprite.width() as f32,
+                                y: CELL_SIZE.0 as f32 / sprite.height() as f32,
+                            })
+                            .dest(ggez::mint::Point2 {
+                                x: (CELL_SIZE.1 as f32) * x as f32,
+                                y: (CELL_SIZE.0 as f32) * y as f32,
+                            }),
+                    )
+                    .expect("Draw pls");
+                }
+            }
+        }
+
         // TODO: Implement graphics and locations of things
         // TODO: Draw more
         graphics::present(ctx)?;
@@ -187,11 +254,37 @@ impl event::EventHandler for Game {
         _keymods: KeyMods,
         _repeat: bool,
     ) {
-        //g
     }
     fn mouse_button_up_event(&mut self, _ctx: &mut Context, _button: MouseButton, x: f32, y: f32) {
-        let out_index = ((x / CELL_SIZE.1) as isize, (y / CELL_SIZE.0) as isize);
-        println!("{:?}", out_index);
+        let inp_index = ((x / CELL_SIZE.1) as isize, (y / CELL_SIZE.0) as isize);
+        // For testing
+        println!("{:?}", inp_index);
+        println!("{:?}", self.selected_card);
+        // Selection of cards
+        if ((5..=14).contains(&inp_index.0) && inp_index.1 == 6
+            || (5..=14).contains(&inp_index.0) && inp_index.1 == 1)
+            && (inp_index.0 < (self.player_one.hand.len() as isize + 5))
+        {
+            self.selected_card = Some((inp_index.0 as usize, inp_index.1 as usize));
+        } else if (5..=14).contains(&inp_index.0) && inp_index.1 == 5
+            || (5..=14).contains(&inp_index.0) && inp_index.1 == 2
+        {
+            if self.board.field[inp_index.0 as usize][inp_index.1 as usize].is_none()
+                && self.selected_card.is_some()
+            {
+                self.board.field[inp_index.0 as usize][inp_index.1 as usize] =
+                    self.board.field[self.selected_card.unwrap().0][self.selected_card.unwrap().1];
+
+                self.board.field[4 + self.player_one.hand.len()][self.selected_card.unwrap().1] =
+                    None;
+                self.player_one.hand.remove(inp_index.1 as usize - 5);
+                self.selected_card = None
+            } else {
+                self.selected_card = None;
+            }
+        } else {
+            self.selected_card = None;
+        }
     }
     // Implement functions for events of key presses, etc
     // TODO: Input handler
@@ -217,7 +310,12 @@ fn main() -> GameResult {
     // Builds context
     let (mut context, event_loop) = context_builder.build()?;
     // Initiates game
-    let state = Game::new(&mut context)?;
+    let mut state = Game::new(&mut context)?;
+    // TESTING
+    state.fill_deck();
+    for i in 0..=4 {
+        state.draw_card();
+    }
     // Run application window
     run(context, event_loop, state)
 }
