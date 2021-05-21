@@ -1,11 +1,11 @@
-#[derive(Clone)]
+#[derive(Clone, Copy)]
 pub enum Effect {
     Damage,
     ModStrength,
 }
-// Consider moving this elsewhere
-#[derive(Clone)]
-pub enum ActivePlayer {
+// Consider moving this elsewhere, and renaming
+#[derive(Clone, Copy)]
+pub enum PlayerType {
     One,
     Two,
 }
@@ -14,5 +14,5 @@ pub enum ActivePlayer {
 /// To confirm that it works, it returns the modified values, or an error message.
 pub trait Target {
     // TODO: Concider this; Should it return an isize? I think the error should return a message at least.
-    fn apply_effect(&self, effect: Effect, modifier: isize) -> Result<isize, &'static str>;
+    fn apply_effect(&mut self, effect: Effect, modifier: isize) -> Result<isize, &'static str>;
 }

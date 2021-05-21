@@ -9,14 +9,17 @@ use std::{io, path};
 // Local imports from lib ´backend´ folder
 #[path = "lib/card.rs"]
 mod card;
-#[path = "lib/Player.rs"]
+#[path = "lib/player.rs"]
 mod player;
 #[path = "lib/traits.rs"]
 mod traits;
 // Local import structs
-use card::Card;
+use card::CType::*;
+use card::CardPosition::*;
+use card::{CType, Card, CardPosition};
 use player::Player;
-use traits::{ActivePlayer, Effect};
+use traits::Effect::*;
+use traits::PlayerType;
 
 // ggez
 use ggez::event;
@@ -70,13 +73,13 @@ impl Board {
 struct Game {
     /// Image of the cards and relevant knowledge for
     /// how it should handle inputs
-    sprites: Vec<(Card, graphics::Image)>,
+    deck: Vec<(Card, graphics::Image)>,
     player_one: player::Player,
     player_two: player::Player,
     /// It is an option since logically there does not need to be an active player at all times.
     /// For example; starting out a game, it might be undecided. This also makes it easier to
     /// implement it as a pointer :P
-    current_player: ActivePlayer,
+    current_player: PlayerType,
     /// Implementation of backend board
     // TODO: Implement it :P
     board: Board,
@@ -85,34 +88,56 @@ struct Game {
 /// Implementation of basic functions of the frontend program
 impl Game {
     pub fn new(ctx: &mut Context) -> GameResult<Game> {
-        let player1 = Game::new_player();
-        let player2 = Game::new_player();
         let sprites = Game::load_sprites();
         Ok(Game {
-            sprites: sprites,
-            player_one: player1,
-            player_two: player2,
-            current_player: ActivePlayer::One,
+            deck: sprites
+                .iter()
+                .map(|sprite| {
+                    (
+                        sprite.0,
+                        graphics::Image::new(ctx, sprite.1.clone()).unwrap(),
+                    )
+                })
+                .collect::<Vec<(Card, graphics::Image)>>(),
+            player_one: Player {
+                health: 100,
+                hand: Vec::<Card>::new(),
+                special_ability: (ModStrength, 0),
+            },
+            player_two: Player {
+                health: 100,
+                hand: Vec::<Card>::new(),
+                special_ability: (ModStrength, 0),
+            },
+            current_player: PlayerType::One,
             board: Board::new(),
         })
     }
-    fn new_player() -> Player {
-        // TODO: Generate new player
-    }
-    fn load_sprites() -> Vec<(Card, graphics::Image)> {
+    fn load_sprites() -> Vec<(Card, String)> {
         // TODO: Implement graphics and proper loading function7
-        let mut sprites: Vec<(Card, graphics::Image)> = Vec::new();
-        sprites.push((Card::new(), "/ccg-test-1.png".to_string()));
+        let mut sprites: Vec<(Card, String)> = Vec::new();
+        // Temporary values for cards
+        sprites.push((
+            Card::new(
+                Deck,
+                10,
+                10,
+                (Person, EECS),
+                (Damage, 10),
+                //"Tänk om SM slutade it tid...".to_string(),
+            ),
+            "/ccg-test-1.png".to_string(),
+        ));
         return sprites;
-    }
-    // TODO: Implement Target trait for respective functions
-    /// play plays a card in the player's hand, optionally supply targets
-    ///
-    /// card : the
-    /// card_targets is either a Card, Player, or ... which inherits the Target trait
-    pub fn play(card: Option<Card>, card_targets: Option<&Target>) -> Result<T, E> {
-        // pass
-    }
+    } /*
+      // TODO: Implement Target trait for respective functions
+      /// play plays a card in the player's hand, optionally supply targets
+      ///
+      /// card : the
+      /// card_targets is either a Card, Player, or ... which inherits the Target trait
+      pub fn play(card: Option<Card>, card_targets: Option<&Target>) -> Result<T, E> {
+          // pass
+      }*/
 }
 
 /// Implementeation of the eventloop in the frontend
