@@ -41,7 +41,7 @@ impl Player {
     /// 
     /// target_index : the index of the position on the board where the card
     /// is to be played
-    fn play(&self, cardindex: usize, board: Board, target_index: (usize, usize)) {
+    fn play(&self, cardindex: usize, mut board: Board, target_index: (usize, usize)) -> Result<(usize, usize), &'static str> {
         //put card in new position, or affect targets
         // This needs to be fixed, commenting it out for now
         
@@ -53,8 +53,9 @@ impl Player {
                 }
                 // sacrifice the card to add mana to target
                 else {
-                    board.field[target_index.0][target_index.1].unwrap().mana += 1;
+                    board.field[target_index.0][target_index.1].unwrap().apply_effect(Effect::ModMana, 1);
                 }
+                return Ok(target_index)
             }
             Event => {
                 if board.field[target_index.0][target_index.1].is_none(){
@@ -65,6 +66,10 @@ impl Player {
                 else {
                     board.field[target_index.0][target_index.1].unwrap().apply_effect(self.hand[cardindex].effects.0, self.hand[cardindex].effects.1);    
                 }
+                return Ok(target_index)
+            }
+            _ => {
+                return Err("This card doesn't have a primary type!");
             }
         }
         //remove card from hand

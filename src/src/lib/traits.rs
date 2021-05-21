@@ -2,6 +2,7 @@
 pub enum Effect {
     Damage,
     ModStrength,
+    ModMana,
 }
 // Consider moving this elsewhere, and renaming
 #[derive(Clone, Copy)]
