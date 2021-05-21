@@ -72,8 +72,6 @@ impl Player {
                 return Err("This card doesn't have a primary type!");
             }
         }
-        //remove card from hand
-        self.hand.remove(cardindex);
         
     }
     //draws a card from a given pile
