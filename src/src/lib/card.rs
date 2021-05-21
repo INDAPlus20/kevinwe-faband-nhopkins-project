@@ -5,7 +5,7 @@ use crate::player::Player;
 use crate::traits::{Effect, PlayerType, Target};
 
 /// Card types
-#[derive(Clone, Copy, Debug)]
+#[derive(Clone, Copy, Debug, PartialEq)]
 pub enum CType {
     Event,
     Person,
