@@ -71,6 +71,7 @@ struct Game {
     /// Implementation of backend board
     // TODO: Implement it :P
     board: Board,
+    selected_card: Option<(usize, usize)>,
 }
 
 /// Implementation of basic functions of the frontend program
@@ -100,11 +101,16 @@ impl Game {
             },
             current_player: PlayerType::One,
             board: Board::new(),
+            selected_card: None,
         })
     }
     fn update(&mut self) {
         for i in 0..self.player_one.hand.len() {
             self.board.field[5 + i][6] = Some(self.player_one.hand[i]);
+        }
+        if self.player_one.hand.len() == 0 {
+            println!("GG");
+            std::process::exit(0);
         }
     }
     fn load_sprites() -> Vec<(Card, String)> {
@@ -156,7 +162,7 @@ impl Game {
 impl event::EventHandler for Game {
     /// Updating function for game logic, which currently is not handeled by the frontend
     fn update(&mut self, _ctx: &mut Context) -> GameResult {
-        // Destroying all purpose or result, lmfao
+        // Calling for the backend to update the internal logic
         self.update();
         Ok(())
     }
@@ -168,6 +174,11 @@ impl event::EventHandler for Game {
         // Draw playing field
         for x in 0..CELL_AMOUNT.1 as usize {
             for y in 0..CELL_AMOUNT.0 as usize {
+                /*let board = graphics::draw(
+                    ctx,
+                    &graphics::Image::new(ctx, "/ccg-tile-1.png".to_string()),
+                    DrawParam::default(),
+                );*/
                 let board = graphics::Mesh::new_rectangle(
                     ctx,
                     graphics::DrawMode::fill(),
@@ -202,9 +213,8 @@ impl event::EventHandler for Game {
         // Drawing played cards
         for x in 0..CELL_AMOUNT.1 as usize {
             for y in 0..CELL_AMOUNT.0 as usize {
-                //y
-                if let Some(Card) = self.board.field[x][y] {
-                    let card_for_sprite = self.board.field[x][y].unwrap();
+                if let Some(card) = self.board.field[x][y] {
+                    let card_for_sprite = card;
                     let sprite: graphics::Image = self
                         .sprites
                         .iter()
@@ -244,11 +254,37 @@ impl event::EventHandler for Game {
         _keymods: KeyMods,
         _repeat: bool,
     ) {
-        //g
     }
     fn mouse_button_up_event(&mut self, _ctx: &mut Context, _button: MouseButton, x: f32, y: f32) {
-        let out_index = ((x / CELL_SIZE.1) as isize, (y / CELL_SIZE.0) as isize);
-        println!("{:?}", out_index);
+        let inp_index = ((x / CELL_SIZE.1) as isize, (y / CELL_SIZE.0) as isize);
+        // For testing
+        println!("{:?}", inp_index);
+        println!("{:?}", self.selected_card);
+        // Selection of cards
+        if ((5..=14).contains(&inp_index.0) && inp_index.1 == 6
+            || (5..=14).contains(&inp_index.0) && inp_index.1 == 1)
+            && (inp_index.0 < (self.player_one.hand.len() as isize + 5))
+        {
+            self.selected_card = Some((inp_index.0 as usize, inp_index.1 as usize));
+        } else if (5..=14).contains(&inp_index.0) && inp_index.1 == 5
+            || (5..=14).contains(&inp_index.0) && inp_index.1 == 2
+        {
+            if self.board.field[inp_index.0 as usize][inp_index.1 as usize].is_none()
+                && self.selected_card.is_some()
+            {
+                self.board.field[inp_index.0 as usize][inp_index.1 as usize] =
+                    self.board.field[self.selected_card.unwrap().0][self.selected_card.unwrap().1];
+
+                self.board.field[4 + self.player_one.hand.len()][self.selected_card.unwrap().1] =
+                    None;
+                self.player_one.hand.remove(inp_index.1 as usize - 5);
+                self.selected_card = None
+            } else {
+                self.selected_card = None;
+            }
+        } else {
+            self.selected_card = None;
+        }
     }
     // Implement functions for events of key presses, etc
     // TODO: Input handler
@@ -277,7 +313,9 @@ fn main() -> GameResult {
     let mut state = Game::new(&mut context)?;
     // TESTING
     state.fill_deck();
-    state.draw_card();
+    for i in 0..=4 {
+        state.draw_card();
+    }
     // Run application window
     run(context, event_loop, state)
 }
